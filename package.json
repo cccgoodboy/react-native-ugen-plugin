@@ -1,0 +1,19 @@
+{
+  "name": "react-native-AliLiving",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cccgoodboy/react-native-ugen-plugin.git"
+  },
+  "author": "ccc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cccgoodboy/react-native-ugen-plugin.git/issues"
+  },
+  "homepage": "https://github.com/cccgoodboy/react-native-ugen-plugin.git#readme"
+}
