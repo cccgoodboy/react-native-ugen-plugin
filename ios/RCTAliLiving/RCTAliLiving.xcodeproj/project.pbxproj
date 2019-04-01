@@ -15,6 +15,7 @@
 		214ACBE82251D74100C7C14D /* IMSIotAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 214ACBCF2251D74100C7C14D /* IMSIotAuth.m */; };
 		214ACBE92251D74100C7C14D /* RNSendToJsReact.m in Sources */ = {isa = PBXBuildFile; fileRef = 214ACBE12251D74100C7C14D /* RNSendToJsReact.m */; };
 		214ACBEA2251D74100C7C14D /* IMSNetWorkServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 214ACBE42251D74100C7C14D /* IMSNetWorkServer.m */; };
+		C966522B9427EFCA0417E835 /* Pods_RCTAliLiving.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF9CACC236611CCB5833FC72 /* Pods_RCTAliLiving.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -59,6 +60,9 @@
 		214ACBE22251D74100C7C14D /* IMSNetWorkServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMSNetWorkServer.h; sourceTree = "<group>"; };
 		214ACBE32251D74100C7C14D /* RNSendToJsReact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNSendToJsReact.h; sourceTree = "<group>"; };
 		214ACBE42251D74100C7C14D /* IMSNetWorkServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMSNetWorkServer.m; sourceTree = "<group>"; };
+		C3F52D701BFD53D981AF4EEB /* Pods-RCTAliLiving.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RCTAliLiving.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RCTAliLiving/Pods-RCTAliLiving.debug.xcconfig"; sourceTree = "<group>"; };
+		EF9CACC236611CCB5833FC72 /* Pods_RCTAliLiving.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RCTAliLiving.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC105059FC89E0BB7852451E /* Pods-RCTAliLiving.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RCTAliLiving.release.xcconfig"; path = "Pods/Target Support Files/Pods-RCTAliLiving/Pods-RCTAliLiving.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C966522B9427EFCA0417E835 /* Pods_RCTAliLiving.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +82,8 @@
 			children = (
 				214ACBBC2251D6DB00C7C14D /* RCTAliLiving */,
 				214ACBBB2251D6DB00C7C14D /* Products */,
+				4932A5F506C73EFF88973296 /* Pods */,
+				B3288031A4B5BBECE92ED8DC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -170,6 +177,23 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		4932A5F506C73EFF88973296 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C3F52D701BFD53D981AF4EEB /* Pods-RCTAliLiving.debug.xcconfig */,
+				FC105059FC89E0BB7852451E /* Pods-RCTAliLiving.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B3288031A4B5BBECE92ED8DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF9CACC236611CCB5833FC72 /* Pods_RCTAliLiving.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -177,9 +201,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 214ACBC32251D6DB00C7C14D /* Build configuration list for PBXNativeTarget "RCTAliLiving" */;
 			buildPhases = (
+				75C98BBC222DF375FEFD343A /* [CP] Check Pods Manifest.lock */,
 				214ACBB62251D6DB00C7C14D /* Sources */,
 				214ACBB72251D6DB00C7C14D /* Frameworks */,
 				214ACBB82251D6DB00C7C14D /* CopyFiles */,
+				E4DD5F10D270A8777DD15FAD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -220,6 +246,47 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		75C98BBC222DF375FEFD343A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RCTAliLiving-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4DD5F10D270A8777DD15FAD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RCTAliLiving/Pods-RCTAliLiving-resources.sh",
+				"${PODS_ROOT}/AlicloudALBBOpenAccount/openaccount/ALBBOpenAccountUI.framework/ALBBOpenAccount.bundle",
+				"${PODS_ROOT}/IMSMobileChannel/IMSMobileChannel/AlinkIoTExpress.framework/cafile.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ALBBOpenAccount.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/cafile.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RCTAliLiving/Pods-RCTAliLiving-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		214ACBB62251D6DB00C7C14D /* Sources */ = {
@@ -353,6 +420,7 @@
 		};
 		214ACBC42251D6DB00C7C14D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3F52D701BFD53D981AF4EEB /* Pods-RCTAliLiving.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GHVQG48H4A;
@@ -365,6 +433,7 @@
 		};
 		214ACBC52251D6DB00C7C14D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC105059FC89E0BB7852451E /* Pods-RCTAliLiving.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GHVQG48H4A;

@@ -1,0 +1,6 @@
+framework module LPBSystem {
+  umbrella header "LPBSystem.h"
+
+  export *
+  module * { export * }
+}

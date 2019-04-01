@@ -1,0 +1,133 @@
+PODS:
+  - AKTBJSONModel (1.0.0)
+  - AlicloudALBBOpenAccount (3.4.0.30):
+    - AlicloudSecurityGuardSDK (= 5.3.78)
+    - AlicloudSGMain (= 5.3.78)
+    - AlicloudSGSecurityBody (= 5.3.41)
+    - AlicloudUTDID (= 1.1.0.16)
+  - AlicloudApiSDK (1.0.0)
+  - AlicloudPushIoT (1.9.5.3):
+    - AlicloudUtils
+  - AlicloudSecurityGuardSDK (5.3.78)
+  - AlicloudSGMain (5.3.78):
+    - AlicloudSecurityGuardSDK (= 5.3.78)
+  - AlicloudSGSecurityBody (5.3.41):
+    - AlicloudSecurityGuardSDK (= 5.3.78)
+    - AlicloudSGMain (= 5.3.78)
+  - AlicloudUTDID (1.1.0.16)
+  - AlicloudUtils (1.3.6):
+    - AlicloudUTDID
+  - CocoaAsyncSocket (7.4.2)
+  - IMLCoapBase (1.5.0)
+  - IMSAccount (1.1.0):
+    - IMSBonePluginKit (= 1.1.0)
+    - IMSLog (= 1.0.1)
+  - IMSApiClient (1.2.0):
+    - AlicloudApiSDK (= 1.0.0)
+    - AlicloudSGMain (= 5.3.78)
+    - IMSLog (= 1.0.1)
+  - IMSAuthentication (1.1.0):
+    - IMSAccount (= 1.1.0)
+    - IMSApiClient (= 1.2.0)
+    - IMSLog (= 1.0.1)
+  - IMSBonePluginKit (1.1.0)
+  - IMSDeviceCenter (1.5.0):
+    - AKTBJSONModel (= 1.0.0)
+    - IMLCoapBase (= 1.5.0)
+    - IMSApiClient (= 1.2.0)
+    - IMSBonePluginKit (= 1.1.0)
+    - IMSLog (= 1.0.1)
+    - LinkNetworkSDK (= 1.0.0)
+  - IMSDeviceGateway (1.5.0):
+    - IMSMobileChannel (= 1.5.0)
+  - IMSLog (1.0.1)
+  - IMSMobileChannel (1.5.0):
+    - AlicloudUTDID (= 1.1.0.16)
+    - IMSApiClient (= 1.2.0)
+    - IMSLog (= 1.0.1)
+  - IMSThingCapability (1.5.0):
+    - AKTBJSONModel (= 1.0.0)
+    - AlicloudSGMain (= 5.3.78)
+    - IMLCoapBase (= 1.5.0)
+    - IMSApiClient (= 1.2.0)
+    - IMSAuthentication (= 1.1.0)
+    - IMSBonePluginKit (= 1.1.0)
+    - IMSDeviceGateway (= 1.5.0)
+    - IMSLog (= 1.0.1)
+    - IMSMobileChannel (= 1.5.0)
+  - LinkNetworkSDK (1.0.0):
+    - IMSLog (= 1.0.1)
+  - MJRefresh (3.1.15)
+  - Reachability (3.2)
+  - ZipArchive (1.4.0)
+
+DEPENDENCIES:
+  - AlicloudALBBOpenAccount (= 3.4.0.30)
+  - AlicloudPushIoT (= 1.9.5.3)
+  - CocoaAsyncSocket (= 7.4.2)
+  - IMSApiClient (= 1.2.0)
+  - IMSAuthentication (= 1.1.0)
+  - IMSDeviceCenter (= 1.5.0)
+  - IMSMobileChannel (= 1.5.0)
+  - IMSThingCapability (= 1.5.0)
+  - MJRefresh (= 3.1.15)
+  - Reachability (= 3.2)
+  - ZipArchive (= 1.4.0)
+
+SPEC REPOS:
+  https://github.com/aliyun/aliyun-specs.git:
+    - AKTBJSONModel
+    - AlicloudALBBOpenAccount
+    - AlicloudApiSDK
+    - AlicloudPushIoT
+    - AlicloudSecurityGuardSDK
+    - AlicloudSGMain
+    - AlicloudSGSecurityBody
+    - AlicloudUTDID
+    - AlicloudUtils
+    - IMLCoapBase
+    - IMSAccount
+    - IMSApiClient
+    - IMSAuthentication
+    - IMSBonePluginKit
+    - IMSDeviceCenter
+    - IMSDeviceGateway
+    - IMSLog
+    - IMSMobileChannel
+    - IMSThingCapability
+    - LinkNetworkSDK
+  https://github.com/CocoaPods/Specs.git:
+    - CocoaAsyncSocket
+    - MJRefresh
+    - Reachability
+    - ZipArchive
+
+SPEC CHECKSUMS:
+  AKTBJSONModel: 143a89529ee441682bb3f61b1b82d5b227e0f28d
+  AlicloudALBBOpenAccount: bd3742a5e033f338af3b685c010b7553274befab
+  AlicloudApiSDK: 1da00d1c382c1b89051d7e9f9dad00d3c0930d8f
+  AlicloudPushIoT: 9e2b3f2a9c76cfca8c0ff64ff343719b65a10d32
+  AlicloudSecurityGuardSDK: 23ebe9195e307bcf36f211d73e1d597e92615e1e
+  AlicloudSGMain: 533f932f347cd2e6b3e8d036f49c26bfcac59075
+  AlicloudSGSecurityBody: 77933ea12483e2308cd623f9fb06f9b6efb55f46
+  AlicloudUTDID: 7640837a1f6dd3529be33f8c77b7818cd88129f9
+  AlicloudUtils: 9047114c9c1854205ae26db58264bf1555242ffb
+  CocoaAsyncSocket: f5783bdedd232d91b89769bc4b5a1580aed518ad
+  IMLCoapBase: b2ff79dd4b2a17e439860ccb2d092c33e676d9eb
+  IMSAccount: 51d80bc26fe65d47dc4e4f6631c47e37065bb359
+  IMSApiClient: b1ef879b9f889c0a13b1e901bffd4abb1f38279e
+  IMSAuthentication: 347b17464a20a97175406876e82d86666e464cc2
+  IMSBonePluginKit: 2e463b149ecb7e8ebdc8351516372d561b0f49db
+  IMSDeviceCenter: 5a676d6bdd38ed7060fa118bd4b5bec67b2fdc96
+  IMSDeviceGateway: 161b7b1c08cc81d97fd57c9d2ceec5348779beb0
+  IMSLog: 87b5d8f6e248ed20bb0af9c10b28c7188c27351f
+  IMSMobileChannel: 3f96d0da3036513b736e5049cb6e27aae7674e11
+  IMSThingCapability: 7573330796e094e55d92aaee5ace047a3fc8adda
+  LinkNetworkSDK: 4e8c4ee258e847f0fbdb4ae7943dd3b54c39b042
+  MJRefresh: 9af70f5f9327a2cf87f0fb5929f35fcc2fa638ea
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  ZipArchive: e25a4373192673e3229ac8d6e9f64a3e5713c966
+
+PODFILE CHECKSUM: da686309cd80df5a9cd59b252f3372d10de4850e
+
+COCOAPODS: 1.5.0

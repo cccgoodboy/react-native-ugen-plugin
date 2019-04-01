@@ -1,0 +1,6 @@
+framework module BoneChannel {
+  umbrella header "BoneChannel.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module IMSApiClient {
+  umbrella header "IMSApiClient.h"
+
+  export *
+  module * { export * }
+}
