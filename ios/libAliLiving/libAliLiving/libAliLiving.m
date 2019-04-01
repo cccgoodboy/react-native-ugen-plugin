@@ -1,12 +1,12 @@
 //
-//  RCTAliLiving.m
-//  RCTAliLiving
+//  libAliLiving.m
+//  libAliLiving
 //
 //  Created by 初程程 on 2019/4/1.
 //  Copyright © 2019年 初程程. All rights reserved.
 //
 
-#import "RCTAliLiving.h"
+#import "libAliLiving.h"
 #import "IMSIotAuth.h"
 #import "IMSOpenAccount.h"
 #import "FYSDK.h"
@@ -15,9 +15,9 @@
 #import "IMSNetWorkServer.h"
 #define kLoginError @"50001"
 #define JK_IS_STR_NIL(objStr) (![objStr isKindOfClass:[NSString class]] || objStr == nil || [objStr length] <= 0)
-@interface RCTAliLiving()<RCTBridgeModule>
+@interface libAliLiving()<RCTBridgeModule>
 @end
-@implementation RCTAliLiving
+@implementation libAliLiving
 RCT_EXPORT_MODULE(AliLiving);
 //登录
 RCT_REMAP_METHOD(login, resolve:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)rejecter){

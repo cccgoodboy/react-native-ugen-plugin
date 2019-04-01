@@ -1,0 +1,404 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		214AD0552252415A00C7C14D /* libAliLiving.m in Sources */ = {isa = PBXBuildFile; fileRef = 214AD0542252415A00C7C14D /* libAliLiving.m */; };
+		214AD0562252415A00C7C14D /* libAliLiving.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 214AD0532252415A00C7C14D /* libAliLiving.h */; };
+		214AD07B2252421F00C7C14D /* FYSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 214AD05E2252421F00C7C14D /* FYSDK.m */; };
+		214AD07C2252421F00C7C14D /* IMSOpenAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 214AD0612252421F00C7C14D /* IMSOpenAccount.m */; };
+		214AD07D2252421F00C7C14D /* IMSIotAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 214AD0622252421F00C7C14D /* IMSIotAuth.m */; };
+		214AD07E2252421F00C7C14D /* RNSendToJsReact.m in Sources */ = {isa = PBXBuildFile; fileRef = 214AD0742252421F00C7C14D /* RNSendToJsReact.m */; };
+		214AD07F2252421F00C7C14D /* IMSNetWorkServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 214AD0772252421F00C7C14D /* IMSNetWorkServer.m */; };
+		214AD0802252421F00C7C14D /* WebSocketClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 214AD0792252421F00C7C14D /* WebSocketClient.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		214AD04E2252415A00C7C14D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				214AD0562252415A00C7C14D /* libAliLiving.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		214AD0502252415A00C7C14D /* liblibAliLiving.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibAliLiving.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		214AD0532252415A00C7C14D /* libAliLiving.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libAliLiving.h; sourceTree = "<group>"; };
+		214AD0542252415A00C7C14D /* libAliLiving.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = libAliLiving.m; sourceTree = "<group>"; };
+		214AD05E2252421F00C7C14D /* FYSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYSDK.m; sourceTree = "<group>"; };
+		214AD05F2252421F00C7C14D /* FYSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYSDK.h; sourceTree = "<group>"; };
+		214AD0612252421F00C7C14D /* IMSOpenAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMSOpenAccount.m; sourceTree = "<group>"; };
+		214AD0622252421F00C7C14D /* IMSIotAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMSIotAuth.m; sourceTree = "<group>"; };
+		214AD0632252421F00C7C14D /* IMSOpenAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMSOpenAccount.h; sourceTree = "<group>"; };
+		214AD0652252421F00C7C14D /* ALBBOpenAccountLoginLogTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ALBBOpenAccountLoginLogTableViewCell.xib; sourceTree = "<group>"; };
+		214AD0662252421F00C7C14D /* ALBBOpenAccountOneStepRegisterVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ALBBOpenAccountOneStepRegisterVC.xib; sourceTree = "<group>"; };
+		214AD0672252421F00C7C14D /* ALBBOpenAccountUpdateMobileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ALBBOpenAccountUpdateMobileViewController.xib; sourceTree = "<group>"; };
+		214AD0682252421F00C7C14D /* ALBBOpenAccountRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ALBBOpenAccountRegisterViewController.xib; sourceTree = "<group>"; };
+		214AD0692252421F00C7C14D /* ALBBOpenAccountFindPwdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ALBBOpenAccountFindPwdViewController.xib; sourceTree = "<group>"; };
+		214AD06A2252421F00C7C14D /* ALBBOpenAccountSetPwdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ALBBOpenAccountSetPwdViewController.xib; sourceTree = "<group>"; };
+		214AD06B2252421F00C7C14D /* ALBBOpenAccountLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ALBBOpenAccountLoginViewController.xib; sourceTree = "<group>"; };
+		214AD06C2252421F00C7C14D /* ALBBOpenAccountCountryCodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ALBBOpenAccountCountryCodeViewController.xib; sourceTree = "<group>"; };
+		214AD06D2252421F00C7C14D /* ALBBOpenAccountLoginNoPwdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ALBBOpenAccountLoginNoPwdViewController.xib; sourceTree = "<group>"; };
+		214AD06E2252421F00C7C14D /* ALBBOpenAccountLoginHistoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ALBBOpenAccountLoginHistoryTableViewCell.xib; sourceTree = "<group>"; };
+		214AD06F2252421F00C7C14D /* ALBBOpenAccountPreFindPwdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ALBBOpenAccountPreFindPwdViewController.xib; sourceTree = "<group>"; };
+		214AD0702252421F00C7C14D /* ALBBOpenAccountResetPwdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ALBBOpenAccountResetPwdViewController.xib; sourceTree = "<group>"; };
+		214AD0712252421F00C7C14D /* ALBBOpenAccountLoginLogViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ALBBOpenAccountLoginLogViewController.xib; sourceTree = "<group>"; };
+		214AD0722252421F00C7C14D /* IMSIotAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMSIotAuth.h; sourceTree = "<group>"; };
+		214AD0742252421F00C7C14D /* RNSendToJsReact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNSendToJsReact.m; sourceTree = "<group>"; };
+		214AD0752252421F00C7C14D /* IMSNetWorkServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMSNetWorkServer.h; sourceTree = "<group>"; };
+		214AD0762252421F00C7C14D /* RNSendToJsReact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNSendToJsReact.h; sourceTree = "<group>"; };
+		214AD0772252421F00C7C14D /* IMSNetWorkServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMSNetWorkServer.m; sourceTree = "<group>"; };
+		214AD0792252421F00C7C14D /* WebSocketClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebSocketClient.m; sourceTree = "<group>"; };
+		214AD07A2252421F00C7C14D /* WebSocketClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebSocketClient.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		214AD04D2252415A00C7C14D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		214AD0472252415A00C7C14D = {
+			isa = PBXGroup;
+			children = (
+				214AD0522252415A00C7C14D /* libAliLiving */,
+				214AD0512252415A00C7C14D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		214AD0512252415A00C7C14D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				214AD0502252415A00C7C14D /* liblibAliLiving.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		214AD0522252415A00C7C14D /* libAliLiving */ = {
+			isa = PBXGroup;
+			children = (
+				214AD05C2252421F00C7C14D /* Ali */,
+				214AD0732252421F00C7C14D /* Network */,
+				214AD0782252421F00C7C14D /* WebSocket */,
+				214AD0532252415A00C7C14D /* libAliLiving.h */,
+				214AD0542252415A00C7C14D /* libAliLiving.m */,
+			);
+			path = libAliLiving;
+			sourceTree = "<group>";
+		};
+		214AD05C2252421F00C7C14D /* Ali */ = {
+			isa = PBXGroup;
+			children = (
+				214AD05D2252421F00C7C14D /* FYSDK */,
+				214AD0602252421F00C7C14D /* Account */,
+			);
+			path = Ali;
+			sourceTree = "<group>";
+		};
+		214AD05D2252421F00C7C14D /* FYSDK */ = {
+			isa = PBXGroup;
+			children = (
+				214AD05E2252421F00C7C14D /* FYSDK.m */,
+				214AD05F2252421F00C7C14D /* FYSDK.h */,
+			);
+			path = FYSDK;
+			sourceTree = "<group>";
+		};
+		214AD0602252421F00C7C14D /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				214AD0612252421F00C7C14D /* IMSOpenAccount.m */,
+				214AD0622252421F00C7C14D /* IMSIotAuth.m */,
+				214AD0632252421F00C7C14D /* IMSOpenAccount.h */,
+				214AD0642252421F00C7C14D /* OpenAccount */,
+				214AD0722252421F00C7C14D /* IMSIotAuth.h */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		214AD0642252421F00C7C14D /* OpenAccount */ = {
+			isa = PBXGroup;
+			children = (
+				214AD0652252421F00C7C14D /* ALBBOpenAccountLoginLogTableViewCell.xib */,
+				214AD0662252421F00C7C14D /* ALBBOpenAccountOneStepRegisterVC.xib */,
+				214AD0672252421F00C7C14D /* ALBBOpenAccountUpdateMobileViewController.xib */,
+				214AD0682252421F00C7C14D /* ALBBOpenAccountRegisterViewController.xib */,
+				214AD0692252421F00C7C14D /* ALBBOpenAccountFindPwdViewController.xib */,
+				214AD06A2252421F00C7C14D /* ALBBOpenAccountSetPwdViewController.xib */,
+				214AD06B2252421F00C7C14D /* ALBBOpenAccountLoginViewController.xib */,
+				214AD06C2252421F00C7C14D /* ALBBOpenAccountCountryCodeViewController.xib */,
+				214AD06D2252421F00C7C14D /* ALBBOpenAccountLoginNoPwdViewController.xib */,
+				214AD06E2252421F00C7C14D /* ALBBOpenAccountLoginHistoryTableViewCell.xib */,
+				214AD06F2252421F00C7C14D /* ALBBOpenAccountPreFindPwdViewController.xib */,
+				214AD0702252421F00C7C14D /* ALBBOpenAccountResetPwdViewController.xib */,
+				214AD0712252421F00C7C14D /* ALBBOpenAccountLoginLogViewController.xib */,
+			);
+			path = OpenAccount;
+			sourceTree = "<group>";
+		};
+		214AD0732252421F00C7C14D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				214AD0742252421F00C7C14D /* RNSendToJsReact.m */,
+				214AD0752252421F00C7C14D /* IMSNetWorkServer.h */,
+				214AD0762252421F00C7C14D /* RNSendToJsReact.h */,
+				214AD0772252421F00C7C14D /* IMSNetWorkServer.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		214AD0782252421F00C7C14D /* WebSocket */ = {
+			isa = PBXGroup;
+			children = (
+				214AD0792252421F00C7C14D /* WebSocketClient.m */,
+				214AD07A2252421F00C7C14D /* WebSocketClient.h */,
+			);
+			path = WebSocket;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		214AD04F2252415A00C7C14D /* libAliLiving */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 214AD0592252415A00C7C14D /* Build configuration list for PBXNativeTarget "libAliLiving" */;
+			buildPhases = (
+				214AD04C2252415A00C7C14D /* Sources */,
+				214AD04D2252415A00C7C14D /* Frameworks */,
+				214AD04E2252415A00C7C14D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libAliLiving;
+			productName = libAliLiving;
+			productReference = 214AD0502252415A00C7C14D /* liblibAliLiving.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		214AD0482252415A00C7C14D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "初程程";
+				TargetAttributes = {
+					214AD04F2252415A00C7C14D = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 214AD04B2252415A00C7C14D /* Build configuration list for PBXProject "libAliLiving" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 214AD0472252415A00C7C14D;
+			productRefGroup = 214AD0512252415A00C7C14D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				214AD04F2252415A00C7C14D /* libAliLiving */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		214AD04C2252415A00C7C14D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				214AD0802252421F00C7C14D /* WebSocketClient.m in Sources */,
+				214AD0552252415A00C7C14D /* libAliLiving.m in Sources */,
+				214AD07C2252421F00C7C14D /* IMSOpenAccount.m in Sources */,
+				214AD07D2252421F00C7C14D /* IMSIotAuth.m in Sources */,
+				214AD07F2252421F00C7C14D /* IMSNetWorkServer.m in Sources */,
+				214AD07E2252421F00C7C14D /* RNSendToJsReact.m in Sources */,
+				214AD07B2252421F00C7C14D /* FYSDK.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		214AD0572252415A00C7C14D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		214AD0582252415A00C7C14D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		214AD05A2252415A00C7C14D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GHVQG48H4A;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../react-native/React/**";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		214AD05B2252415A00C7C14D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GHVQG48H4A;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../react-native/React/**";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		214AD04B2252415A00C7C14D /* Build configuration list for PBXProject "libAliLiving" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				214AD0572252415A00C7C14D /* Debug */,
+				214AD0582252415A00C7C14D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		214AD0592252415A00C7C14D /* Build configuration list for PBXNativeTarget "libAliLiving" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				214AD05A2252415A00C7C14D /* Debug */,
+				214AD05B2252415A00C7C14D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 214AD0482252415A00C7C14D /* Project object */;
+}
