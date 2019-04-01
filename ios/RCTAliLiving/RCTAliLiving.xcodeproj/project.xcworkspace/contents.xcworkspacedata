@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:NativePlugin.xcodeproj">
+      location = "self:RCTAliLiving.xcodeproj">
    </FileRef>
 </Workspace>
