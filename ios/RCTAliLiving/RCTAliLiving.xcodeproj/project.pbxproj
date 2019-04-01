@@ -13,8 +13,8 @@
 		214ACBE62251D74100C7C14D /* FYSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 214ACBCB2251D74100C7C14D /* FYSDK.m */; };
 		214ACBE72251D74100C7C14D /* IMSOpenAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 214ACBCE2251D74100C7C14D /* IMSOpenAccount.m */; };
 		214ACBE82251D74100C7C14D /* IMSIotAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 214ACBCF2251D74100C7C14D /* IMSIotAuth.m */; };
-		214ACBE92251D74100C7C14D /* RNSendToJsReact.m in Sources */ = {isa = PBXBuildFile; fileRef = 214ACBE12251D74100C7C14D /* RNSendToJsReact.m */; };
 		214ACBEA2251D74100C7C14D /* IMSNetWorkServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 214ACBE42251D74100C7C14D /* IMSNetWorkServer.m */; };
+		214ACC5D2251E0AD00C7C14D /* RNSendToJsReact.m in Sources */ = {isa = PBXBuildFile; fileRef = 214ACC5C2251E0AD00C7C14D /* RNSendToJsReact.m */; };
 		C966522B9427EFCA0417E835 /* Pods_RCTAliLiving.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF9CACC236611CCB5833FC72 /* Pods_RCTAliLiving.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,10 +56,10 @@
 		214ACBDD2251D74100C7C14D /* ALBBOpenAccountResetPwdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ALBBOpenAccountResetPwdViewController.xib; sourceTree = "<group>"; };
 		214ACBDE2251D74100C7C14D /* ALBBOpenAccountLoginLogViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ALBBOpenAccountLoginLogViewController.xib; sourceTree = "<group>"; };
 		214ACBDF2251D74100C7C14D /* IMSIotAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMSIotAuth.h; sourceTree = "<group>"; };
-		214ACBE12251D74100C7C14D /* RNSendToJsReact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNSendToJsReact.m; sourceTree = "<group>"; };
 		214ACBE22251D74100C7C14D /* IMSNetWorkServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMSNetWorkServer.h; sourceTree = "<group>"; };
-		214ACBE32251D74100C7C14D /* RNSendToJsReact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNSendToJsReact.h; sourceTree = "<group>"; };
 		214ACBE42251D74100C7C14D /* IMSNetWorkServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMSNetWorkServer.m; sourceTree = "<group>"; };
+		214ACC5B2251E0AD00C7C14D /* RNSendToJsReact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNSendToJsReact.h; sourceTree = "<group>"; };
+		214ACC5C2251E0AD00C7C14D /* RNSendToJsReact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNSendToJsReact.m; sourceTree = "<group>"; };
 		C3F52D701BFD53D981AF4EEB /* Pods-RCTAliLiving.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RCTAliLiving.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RCTAliLiving/Pods-RCTAliLiving.debug.xcconfig"; sourceTree = "<group>"; };
 		EF9CACC236611CCB5833FC72 /* Pods_RCTAliLiving.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RCTAliLiving.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC105059FC89E0BB7852451E /* Pods-RCTAliLiving.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RCTAliLiving.release.xcconfig"; path = "Pods/Target Support Files/Pods-RCTAliLiving/Pods-RCTAliLiving.release.xcconfig"; sourceTree = "<group>"; };
@@ -169,9 +169,9 @@
 		214ACBE02251D74100C7C14D /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				214ACBE12251D74100C7C14D /* RNSendToJsReact.m */,
+				214ACC5B2251E0AD00C7C14D /* RNSendToJsReact.h */,
+				214ACC5C2251E0AD00C7C14D /* RNSendToJsReact.m */,
 				214ACBE22251D74100C7C14D /* IMSNetWorkServer.h */,
-				214ACBE32251D74100C7C14D /* RNSendToJsReact.h */,
 				214ACBE42251D74100C7C14D /* IMSNetWorkServer.m */,
 			);
 			path = Network;
@@ -296,8 +296,8 @@
 				214ACBE62251D74100C7C14D /* FYSDK.m in Sources */,
 				214ACBE52251D74100C7C14D /* WebSocketClient.m in Sources */,
 				214ACBEA2251D74100C7C14D /* IMSNetWorkServer.m in Sources */,
+				214ACC5D2251E0AD00C7C14D /* RNSendToJsReact.m in Sources */,
 				214ACBBF2251D6DB00C7C14D /* RCTAliLiving.m in Sources */,
-				214ACBE92251D74100C7C14D /* RNSendToJsReact.m in Sources */,
 				214ACBE82251D74100C7C14D /* IMSIotAuth.m in Sources */,
 				214ACBE72251D74100C7C14D /* IMSOpenAccount.m in Sources */,
 			);
