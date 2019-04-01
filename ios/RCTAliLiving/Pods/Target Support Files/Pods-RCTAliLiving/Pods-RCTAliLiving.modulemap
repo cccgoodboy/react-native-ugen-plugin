@@ -1,6 +1,0 @@
-framework module Pods_RCTAliLiving {
-  umbrella header "Pods-RCTAliLiving-umbrella.h"
-
-  export *
-  module * { export * }
-}

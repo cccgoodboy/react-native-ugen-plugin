@@ -1,6 +1,0 @@
-framework module IMLDeviceCenter {
-  umbrella header "IMLDeviceCenter.h"
-
-  export *
-  module * { export * }
-}

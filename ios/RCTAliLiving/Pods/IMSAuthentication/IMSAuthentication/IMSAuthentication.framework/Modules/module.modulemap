@@ -1,6 +1,0 @@
-framework module IMSAuthentication {
-  umbrella header "IMSAuthentication.h"
-
-  export *
-  module * { export * }
-}

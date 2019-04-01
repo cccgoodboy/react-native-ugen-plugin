@@ -1,6 +1,0 @@
-framework module IMLCoapBase {
-  umbrella header "IMLCoapBase.h"
-
-  export *
-  module * { export * }
-}

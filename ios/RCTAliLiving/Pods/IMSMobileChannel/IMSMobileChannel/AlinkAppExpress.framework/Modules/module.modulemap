@@ -1,6 +1,0 @@
-framework module AlinkAppExpress {
-  umbrella header "AlinkAppExpress.h"
-
-  export *
-  module * { export * }
-}
