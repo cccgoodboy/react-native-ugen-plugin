@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		218CD0C42130035900784014 /* RCTNativePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 218CD0C12130035800784014 /* RCTNativePlugin.m */; };
+		214ACB2A2251A67000C7C14D /* WebSocketClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 214ACB0C2251A67000C7C14D /* WebSocketClient.m */; };
+		214ACB2B2251A67000C7C14D /* RNSendToJsReact.m in Sources */ = {isa = PBXBuildFile; fileRef = 214ACB0F2251A67000C7C14D /* RNSendToJsReact.m */; };
+		214ACB2C2251A67000C7C14D /* IMSNetWorkServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 214ACB122251A67000C7C14D /* IMSNetWorkServer.m */; };
+		214ACB2D2251A67000C7C14D /* FYSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 214ACB152251A67000C7C14D /* FYSDK.m */; };
+		214ACB2E2251A67000C7C14D /* IMSOpenAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 214ACB182251A67000C7C14D /* IMSOpenAccount.m */; };
+		214ACB2F2251A67000C7C14D /* IMSIotAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 214ACB192251A67000C7C14D /* IMSIotAuth.m */; };
+		214ACB4C2251A75500C7C14D /* RCTAliLiving.m in Sources */ = {isa = PBXBuildFile; fileRef = 214ACB4B2251A75500C7C14D /* RCTAliLiving.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,9 +29,34 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		214ACB0C2251A67000C7C14D /* WebSocketClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebSocketClient.m; sourceTree = "<group>"; };
+		214ACB0D2251A67000C7C14D /* WebSocketClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebSocketClient.h; sourceTree = "<group>"; };
+		214ACB0F2251A67000C7C14D /* RNSendToJsReact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNSendToJsReact.m; sourceTree = "<group>"; };
+		214ACB102251A67000C7C14D /* IMSNetWorkServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMSNetWorkServer.h; sourceTree = "<group>"; };
+		214ACB112251A67000C7C14D /* RNSendToJsReact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNSendToJsReact.h; sourceTree = "<group>"; };
+		214ACB122251A67000C7C14D /* IMSNetWorkServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMSNetWorkServer.m; sourceTree = "<group>"; };
+		214ACB152251A67000C7C14D /* FYSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYSDK.m; sourceTree = "<group>"; };
+		214ACB162251A67000C7C14D /* FYSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYSDK.h; sourceTree = "<group>"; };
+		214ACB182251A67000C7C14D /* IMSOpenAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMSOpenAccount.m; sourceTree = "<group>"; };
+		214ACB192251A67000C7C14D /* IMSIotAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMSIotAuth.m; sourceTree = "<group>"; };
+		214ACB1A2251A67000C7C14D /* IMSOpenAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMSOpenAccount.h; sourceTree = "<group>"; };
+		214ACB1C2251A67000C7C14D /* ALBBOpenAccountLoginLogTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ALBBOpenAccountLoginLogTableViewCell.xib; sourceTree = "<group>"; };
+		214ACB1D2251A67000C7C14D /* ALBBOpenAccountOneStepRegisterVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ALBBOpenAccountOneStepRegisterVC.xib; sourceTree = "<group>"; };
+		214ACB1E2251A67000C7C14D /* ALBBOpenAccountUpdateMobileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ALBBOpenAccountUpdateMobileViewController.xib; sourceTree = "<group>"; };
+		214ACB1F2251A67000C7C14D /* ALBBOpenAccountRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ALBBOpenAccountRegisterViewController.xib; sourceTree = "<group>"; };
+		214ACB202251A67000C7C14D /* ALBBOpenAccountFindPwdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ALBBOpenAccountFindPwdViewController.xib; sourceTree = "<group>"; };
+		214ACB212251A67000C7C14D /* ALBBOpenAccountSetPwdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ALBBOpenAccountSetPwdViewController.xib; sourceTree = "<group>"; };
+		214ACB222251A67000C7C14D /* ALBBOpenAccountLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ALBBOpenAccountLoginViewController.xib; sourceTree = "<group>"; };
+		214ACB232251A67000C7C14D /* ALBBOpenAccountCountryCodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ALBBOpenAccountCountryCodeViewController.xib; sourceTree = "<group>"; };
+		214ACB242251A67000C7C14D /* ALBBOpenAccountLoginNoPwdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ALBBOpenAccountLoginNoPwdViewController.xib; sourceTree = "<group>"; };
+		214ACB252251A67000C7C14D /* ALBBOpenAccountLoginHistoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ALBBOpenAccountLoginHistoryTableViewCell.xib; sourceTree = "<group>"; };
+		214ACB262251A67000C7C14D /* ALBBOpenAccountPreFindPwdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ALBBOpenAccountPreFindPwdViewController.xib; sourceTree = "<group>"; };
+		214ACB272251A67000C7C14D /* ALBBOpenAccountResetPwdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ALBBOpenAccountResetPwdViewController.xib; sourceTree = "<group>"; };
+		214ACB282251A67000C7C14D /* ALBBOpenAccountLoginLogViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ALBBOpenAccountLoginLogViewController.xib; sourceTree = "<group>"; };
+		214ACB292251A67000C7C14D /* IMSIotAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMSIotAuth.h; sourceTree = "<group>"; };
+		214ACB4A2251A75500C7C14D /* RCTAliLiving.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTAliLiving.h; sourceTree = "<group>"; };
+		214ACB4B2251A75500C7C14D /* RCTAliLiving.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTAliLiving.m; sourceTree = "<group>"; };
 		218CD0B4213000D900784014 /* libNativePlugin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNativePlugin.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		218CD0C12130035800784014 /* RCTNativePlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTNativePlugin.m; sourceTree = "<group>"; };
-		218CD0C32130035900784014 /* RCTNativePlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTNativePlugin.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +70,76 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		214ACB0B2251A67000C7C14D /* WebSocket */ = {
+			isa = PBXGroup;
+			children = (
+				214ACB0C2251A67000C7C14D /* WebSocketClient.m */,
+				214ACB0D2251A67000C7C14D /* WebSocketClient.h */,
+			);
+			path = WebSocket;
+			sourceTree = "<group>";
+		};
+		214ACB0E2251A67000C7C14D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				214ACB0F2251A67000C7C14D /* RNSendToJsReact.m */,
+				214ACB102251A67000C7C14D /* IMSNetWorkServer.h */,
+				214ACB112251A67000C7C14D /* RNSendToJsReact.h */,
+				214ACB122251A67000C7C14D /* IMSNetWorkServer.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		214ACB132251A67000C7C14D /* Ali */ = {
+			isa = PBXGroup;
+			children = (
+				214ACB142251A67000C7C14D /* FYSDK */,
+				214ACB172251A67000C7C14D /* Account */,
+			);
+			path = Ali;
+			sourceTree = "<group>";
+		};
+		214ACB142251A67000C7C14D /* FYSDK */ = {
+			isa = PBXGroup;
+			children = (
+				214ACB152251A67000C7C14D /* FYSDK.m */,
+				214ACB162251A67000C7C14D /* FYSDK.h */,
+			);
+			path = FYSDK;
+			sourceTree = "<group>";
+		};
+		214ACB172251A67000C7C14D /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				214ACB182251A67000C7C14D /* IMSOpenAccount.m */,
+				214ACB192251A67000C7C14D /* IMSIotAuth.m */,
+				214ACB1A2251A67000C7C14D /* IMSOpenAccount.h */,
+				214ACB1B2251A67000C7C14D /* OpenAccount */,
+				214ACB292251A67000C7C14D /* IMSIotAuth.h */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		214ACB1B2251A67000C7C14D /* OpenAccount */ = {
+			isa = PBXGroup;
+			children = (
+				214ACB1C2251A67000C7C14D /* ALBBOpenAccountLoginLogTableViewCell.xib */,
+				214ACB1D2251A67000C7C14D /* ALBBOpenAccountOneStepRegisterVC.xib */,
+				214ACB1E2251A67000C7C14D /* ALBBOpenAccountUpdateMobileViewController.xib */,
+				214ACB1F2251A67000C7C14D /* ALBBOpenAccountRegisterViewController.xib */,
+				214ACB202251A67000C7C14D /* ALBBOpenAccountFindPwdViewController.xib */,
+				214ACB212251A67000C7C14D /* ALBBOpenAccountSetPwdViewController.xib */,
+				214ACB222251A67000C7C14D /* ALBBOpenAccountLoginViewController.xib */,
+				214ACB232251A67000C7C14D /* ALBBOpenAccountCountryCodeViewController.xib */,
+				214ACB242251A67000C7C14D /* ALBBOpenAccountLoginNoPwdViewController.xib */,
+				214ACB252251A67000C7C14D /* ALBBOpenAccountLoginHistoryTableViewCell.xib */,
+				214ACB262251A67000C7C14D /* ALBBOpenAccountPreFindPwdViewController.xib */,
+				214ACB272251A67000C7C14D /* ALBBOpenAccountResetPwdViewController.xib */,
+				214ACB282251A67000C7C14D /* ALBBOpenAccountLoginLogViewController.xib */,
+			);
+			path = OpenAccount;
+			sourceTree = "<group>";
+		};
 		218CD0AB213000D900784014 = {
 			isa = PBXGroup;
 			children = (
@@ -58,8 +159,11 @@
 		218CD0B6213000D900784014 /* NativePlugin */ = {
 			isa = PBXGroup;
 			children = (
-				218CD0C32130035900784014 /* RCTNativePlugin.h */,
-				218CD0C12130035800784014 /* RCTNativePlugin.m */,
+				214ACB132251A67000C7C14D /* Ali */,
+				214ACB0E2251A67000C7C14D /* Network */,
+				214ACB0B2251A67000C7C14D /* WebSocket */,
+				214ACB4A2251A75500C7C14D /* RCTAliLiving.h */,
+				214ACB4B2251A75500C7C14D /* RCTAliLiving.m */,
 			);
 			path = NativePlugin;
 			sourceTree = "<group>";
@@ -121,7 +225,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				218CD0C42130035900784014 /* RCTNativePlugin.m in Sources */,
+				214ACB2B2251A67000C7C14D /* RNSendToJsReact.m in Sources */,
+				214ACB2F2251A67000C7C14D /* IMSIotAuth.m in Sources */,
+				214ACB2E2251A67000C7C14D /* IMSOpenAccount.m in Sources */,
+				214ACB4C2251A75500C7C14D /* RCTAliLiving.m in Sources */,
+				214ACB2A2251A67000C7C14D /* WebSocketClient.m in Sources */,
+				214ACB2C2251A67000C7C14D /* IMSNetWorkServer.m in Sources */,
+				214ACB2D2251A67000C7C14D /* FYSDK.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
