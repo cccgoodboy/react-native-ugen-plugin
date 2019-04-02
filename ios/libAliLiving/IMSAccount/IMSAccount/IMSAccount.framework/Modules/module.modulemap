@@ -1,0 +1,6 @@
+framework module IMSAccount {
+  umbrella header "IMSAccount.h"
+
+  export *
+  module * { export * }
+}

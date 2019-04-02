@@ -1,0 +1,6 @@
+framework module CloudApiSDK {
+  umbrella header "CloudApiSDK.h"
+
+  export *
+  module * { export * }
+}

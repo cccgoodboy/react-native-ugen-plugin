@@ -1,0 +1,6 @@
+framework module IMSThingCapability {
+  umbrella header "IMSThingCapability.h"
+
+  export *
+  module * { export * }
+}

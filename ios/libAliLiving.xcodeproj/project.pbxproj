@@ -15,6 +15,58 @@
 		214AD07E2252421F00C7C14D /* RNSendToJsReact.m in Sources */ = {isa = PBXBuildFile; fileRef = 214AD0742252421F00C7C14D /* RNSendToJsReact.m */; };
 		214AD07F2252421F00C7C14D /* IMSNetWorkServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 214AD0772252421F00C7C14D /* IMSNetWorkServer.m */; };
 		214AD0802252421F00C7C14D /* WebSocketClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 214AD0792252421F00C7C14D /* WebSocketClient.m */; };
+		214AD47422532A7700C7C14D /* SGMain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 214AD3DC22532A7400C7C14D /* SGMain.framework */; };
+		214AD47522532A7700C7C14D /* SecurityGuardSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 214AD3DF22532A7400C7C14D /* SecurityGuardSDK.framework */; };
+		214AD47622532A7700C7C14D /* IMLCoapBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 214AD3E222532A7500C7C14D /* IMLCoapBase.framework */; };
+		214AD47722532A7700C7C14D /* IMSAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 214AD3E522532A7500C7C14D /* IMSAuthentication.framework */; };
+		214AD47822532A7700C7C14D /* IMSLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 214AD3E822532A7500C7C14D /* IMSLog.framework */; };
+		214AD47922532A7700C7C14D /* UTDID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 214AD3EB22532A7500C7C14D /* UTDID.framework */; };
+		214AD47A22532A7700C7C14D /* IMSAccount.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 214AD3EE22532A7500C7C14D /* IMSAccount.framework */; };
+		214AD47B22532A7700C7C14D /* CloudPushSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 214AD3F122532A7500C7C14D /* CloudPushSDK.framework */; };
+		214AD47C22532A7700C7C14D /* IMSApiClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 214AD3F422532A7500C7C14D /* IMSApiClient.framework */; };
+		214AD47D22532A7700C7C14D /* CloudApiSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 214AD3F722532A7500C7C14D /* CloudApiSDK.framework */; };
+		214AD47E22532A7700C7C14D /* IMSBonePluginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 214AD3FA22532A7500C7C14D /* IMSBonePluginKit.framework */; };
+		214AD47F22532A7700C7C14D /* IMLBoneDeviceCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 214AD3FD22532A7500C7C14D /* IMLBoneDeviceCenter.framework */; };
+		214AD48022532A7700C7C14D /* IMLDeviceKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 214AD3FE22532A7500C7C14D /* IMLDeviceKit.framework */; };
+		214AD48122532A7700C7C14D /* IMLDeviceCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 214AD3FF22532A7500C7C14D /* IMLDeviceCenter.framework */; };
+		214AD48222532A7700C7C14D /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 214AD40122532A7500C7C14D /* Reachability.m */; };
+		214AD48322532A7700C7C14D /* ALBBOpenAccountUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 214AD40722532A7500C7C14D /* ALBBOpenAccountUI.framework */; };
+		214AD48422532A7700C7C14D /* ALBBOpenAccountSSO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 214AD40822532A7500C7C14D /* ALBBOpenAccountSSO.framework */; };
+		214AD48522532A7700C7C14D /* ALBBOpenAccountCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 214AD40922532A7500C7C14D /* ALBBOpenAccountCloud.framework */; };
+		214AD48622532A7700C7C14D /* TBJSONModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 214AD40D22532A7600C7C14D /* TBJSONModel.framework */; };
+		214AD48722532A7700C7C14D /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 214AD41122532A7600C7C14D /* UIScrollView+MJRefresh.m */; };
+		214AD48822532A7700C7C14D /* MJRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 214AD41222532A7600C7C14D /* MJRefreshConst.m */; };
+		214AD48922532A7700C7C14D /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 214AD41822532A7600C7C14D /* UIScrollView+MJExtension.m */; };
+		214AD48A22532A7700C7C14D /* NSBundle+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 214AD41B22532A7600C7C14D /* NSBundle+MJRefresh.m */; };
+		214AD48B22532A7700C7C14D /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 214AD41C22532A7600C7C14D /* UIView+MJExtension.m */; };
+		214AD48C22532A7700C7C14D /* MJRefreshBackGifFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 214AD42322532A7600C7C14D /* MJRefreshBackGifFooter.m */; };
+		214AD48D22532A7700C7C14D /* MJRefreshBackStateFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 214AD42422532A7600C7C14D /* MJRefreshBackStateFooter.m */; };
+		214AD48E22532A7700C7C14D /* MJRefreshBackNormalFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 214AD42522532A7600C7C14D /* MJRefreshBackNormalFooter.m */; };
+		214AD48F22532A7700C7C14D /* MJRefreshAutoStateFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 214AD42A22532A7600C7C14D /* MJRefreshAutoStateFooter.m */; };
+		214AD49022532A7700C7C14D /* MJRefreshAutoGifFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 214AD42B22532A7600C7C14D /* MJRefreshAutoGifFooter.m */; };
+		214AD49122532A7700C7C14D /* MJRefreshAutoNormalFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 214AD42C22532A7600C7C14D /* MJRefreshAutoNormalFooter.m */; };
+		214AD49222532A7700C7C14D /* MJRefreshNormalHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 214AD42E22532A7600C7C14D /* MJRefreshNormalHeader.m */; };
+		214AD49322532A7700C7C14D /* MJRefreshStateHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 214AD43222532A7600C7C14D /* MJRefreshStateHeader.m */; };
+		214AD49422532A7700C7C14D /* MJRefreshGifHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 214AD43322532A7600C7C14D /* MJRefreshGifHeader.m */; };
+		214AD49522532A7700C7C14D /* MJRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 214AD43522532A7600C7C14D /* MJRefreshFooter.m */; };
+		214AD49622532A7700C7C14D /* MJRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 214AD43722532A7600C7C14D /* MJRefreshHeader.m */; };
+		214AD49722532A7700C7C14D /* MJRefreshBackFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 214AD43922532A7600C7C14D /* MJRefreshBackFooter.m */; };
+		214AD49822532A7700C7C14D /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 214AD43A22532A7600C7C14D /* MJRefreshAutoFooter.m */; };
+		214AD49922532A7700C7C14D /* MJRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 214AD43C22532A7600C7C14D /* MJRefreshComponent.m */; };
+		214AD49A22532A7700C7C14D /* AlicloudUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 214AD44222532A7600C7C14D /* AlicloudUtils.framework */; };
+		214AD49B22532A7700C7C14D /* LinkNetworkSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 214AD44522532A7600C7C14D /* LinkNetworkSDK.framework */; };
+		214AD49C22532A7700C7C14D /* AsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 214AD44922532A7600C7C14D /* AsyncUdpSocket.m */; };
+		214AD49D22532A7700C7C14D /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 214AD44B22532A7600C7C14D /* AsyncSocket.m */; };
+		214AD49E22532A7700C7C14D /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 214AD44E22532A7600C7C14D /* GCDAsyncUdpSocket.m */; };
+		214AD49F22532A7700C7C14D /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 214AD44F22532A7600C7C14D /* GCDAsyncSocket.m */; };
+		214AD4A022532A7700C7C14D /* AlinkMobileGateway.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 214AD45622532A7600C7C14D /* AlinkMobileGateway.framework */; };
+		214AD4A122532A7700C7C14D /* AlinkIoTExpress.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 214AD45922532A7600C7C14D /* AlinkIoTExpress.framework */; };
+		214AD4A222532A7700C7C14D /* AlinkAppExpress.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 214AD45A22532A7600C7C14D /* AlinkAppExpress.framework */; };
+		214AD4A322532A7700C7C14D /* BoneChannel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 214AD45B22532A7600C7C14D /* BoneChannel.framework */; };
+		214AD4A422532A7700C7C14D /* LPBSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 214AD45E22532A7600C7C14D /* LPBSystem.framework */; };
+		214AD4A522532A7700C7C14D /* BoneThingCapability.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 214AD45F22532A7600C7C14D /* BoneThingCapability.framework */; };
+		214AD4A622532A7700C7C14D /* IMSThingCapability.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 214AD46022532A7600C7C14D /* IMSThingCapability.framework */; };
+		214AD4AC22532A7700C7C14D /* SGSecurityBody.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 214AD47322532A7700C7C14D /* SGSecurityBody.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -59,6 +111,90 @@
 		214AD0772252421F00C7C14D /* IMSNetWorkServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMSNetWorkServer.m; sourceTree = "<group>"; };
 		214AD0792252421F00C7C14D /* WebSocketClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebSocketClient.m; sourceTree = "<group>"; };
 		214AD07A2252421F00C7C14D /* WebSocketClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebSocketClient.h; sourceTree = "<group>"; };
+		214AD3DC22532A7400C7C14D /* SGMain.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SGMain.framework; sourceTree = "<group>"; };
+		214AD3DF22532A7400C7C14D /* SecurityGuardSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SecurityGuardSDK.framework; sourceTree = "<group>"; };
+		214AD3E222532A7500C7C14D /* IMLCoapBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IMLCoapBase.framework; sourceTree = "<group>"; };
+		214AD3E522532A7500C7C14D /* IMSAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IMSAuthentication.framework; sourceTree = "<group>"; };
+		214AD3E822532A7500C7C14D /* IMSLog.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IMSLog.framework; sourceTree = "<group>"; };
+		214AD3EB22532A7500C7C14D /* UTDID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UTDID.framework; sourceTree = "<group>"; };
+		214AD3EE22532A7500C7C14D /* IMSAccount.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IMSAccount.framework; sourceTree = "<group>"; };
+		214AD3F122532A7500C7C14D /* CloudPushSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CloudPushSDK.framework; sourceTree = "<group>"; };
+		214AD3F422532A7500C7C14D /* IMSApiClient.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IMSApiClient.framework; sourceTree = "<group>"; };
+		214AD3F722532A7500C7C14D /* CloudApiSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CloudApiSDK.framework; sourceTree = "<group>"; };
+		214AD3FA22532A7500C7C14D /* IMSBonePluginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IMSBonePluginKit.framework; sourceTree = "<group>"; };
+		214AD3FD22532A7500C7C14D /* IMLBoneDeviceCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IMLBoneDeviceCenter.framework; sourceTree = "<group>"; };
+		214AD3FE22532A7500C7C14D /* IMLDeviceKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IMLDeviceKit.framework; sourceTree = "<group>"; };
+		214AD3FF22532A7500C7C14D /* IMLDeviceCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IMLDeviceCenter.framework; sourceTree = "<group>"; };
+		214AD40122532A7500C7C14D /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		214AD40222532A7500C7C14D /* LICENCE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENCE.txt; sourceTree = "<group>"; };
+		214AD40322532A7500C7C14D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		214AD40422532A7500C7C14D /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		214AD40722532A7500C7C14D /* ALBBOpenAccountUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ALBBOpenAccountUI.framework; sourceTree = "<group>"; };
+		214AD40822532A7500C7C14D /* ALBBOpenAccountSSO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ALBBOpenAccountSSO.framework; sourceTree = "<group>"; };
+		214AD40922532A7500C7C14D /* ALBBOpenAccountCloud.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ALBBOpenAccountCloud.framework; sourceTree = "<group>"; };
+		214AD40D22532A7600C7C14D /* TBJSONModel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TBJSONModel.framework; sourceTree = "<group>"; };
+		214AD40F22532A7600C7C14D /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		214AD41122532A7600C7C14D /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
+		214AD41222532A7600C7C14D /* MJRefreshConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshConst.m; sourceTree = "<group>"; };
+		214AD41322532A7600C7C14D /* UIScrollView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+MJExtension.h"; sourceTree = "<group>"; };
+		214AD41422532A7600C7C14D /* MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefresh.h; sourceTree = "<group>"; };
+		214AD41522532A7600C7C14D /* NSBundle+MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+MJRefresh.h"; sourceTree = "<group>"; };
+		214AD41622532A7600C7C14D /* MJRefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MJRefresh.bundle; sourceTree = "<group>"; };
+		214AD41722532A7600C7C14D /* UIView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJExtension.h"; sourceTree = "<group>"; };
+		214AD41822532A7600C7C14D /* UIScrollView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJExtension.m"; sourceTree = "<group>"; };
+		214AD41922532A7600C7C14D /* MJRefreshConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshConst.h; sourceTree = "<group>"; };
+		214AD41A22532A7600C7C14D /* UIScrollView+MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+MJRefresh.h"; sourceTree = "<group>"; };
+		214AD41B22532A7600C7C14D /* NSBundle+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+MJRefresh.m"; sourceTree = "<group>"; };
+		214AD41C22532A7600C7C14D /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
+		214AD42022532A7600C7C14D /* MJRefreshBackGifFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBackGifFooter.h; sourceTree = "<group>"; };
+		214AD42122532A7600C7C14D /* MJRefreshBackStateFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBackStateFooter.h; sourceTree = "<group>"; };
+		214AD42222532A7600C7C14D /* MJRefreshBackNormalFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBackNormalFooter.h; sourceTree = "<group>"; };
+		214AD42322532A7600C7C14D /* MJRefreshBackGifFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshBackGifFooter.m; sourceTree = "<group>"; };
+		214AD42422532A7600C7C14D /* MJRefreshBackStateFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshBackStateFooter.m; sourceTree = "<group>"; };
+		214AD42522532A7600C7C14D /* MJRefreshBackNormalFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshBackNormalFooter.m; sourceTree = "<group>"; };
+		214AD42722532A7600C7C14D /* MJRefreshAutoStateFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoStateFooter.h; sourceTree = "<group>"; };
+		214AD42822532A7600C7C14D /* MJRefreshAutoNormalFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoNormalFooter.h; sourceTree = "<group>"; };
+		214AD42922532A7600C7C14D /* MJRefreshAutoGifFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoGifFooter.h; sourceTree = "<group>"; };
+		214AD42A22532A7600C7C14D /* MJRefreshAutoStateFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshAutoStateFooter.m; sourceTree = "<group>"; };
+		214AD42B22532A7600C7C14D /* MJRefreshAutoGifFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshAutoGifFooter.m; sourceTree = "<group>"; };
+		214AD42C22532A7600C7C14D /* MJRefreshAutoNormalFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshAutoNormalFooter.m; sourceTree = "<group>"; };
+		214AD42E22532A7600C7C14D /* MJRefreshNormalHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshNormalHeader.m; sourceTree = "<group>"; };
+		214AD42F22532A7600C7C14D /* MJRefreshStateHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshStateHeader.h; sourceTree = "<group>"; };
+		214AD43022532A7600C7C14D /* MJRefreshGifHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshGifHeader.h; sourceTree = "<group>"; };
+		214AD43122532A7600C7C14D /* MJRefreshNormalHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshNormalHeader.h; sourceTree = "<group>"; };
+		214AD43222532A7600C7C14D /* MJRefreshStateHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshStateHeader.m; sourceTree = "<group>"; };
+		214AD43322532A7600C7C14D /* MJRefreshGifHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshGifHeader.m; sourceTree = "<group>"; };
+		214AD43522532A7600C7C14D /* MJRefreshFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshFooter.m; sourceTree = "<group>"; };
+		214AD43622532A7600C7C14D /* MJRefreshComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshComponent.h; sourceTree = "<group>"; };
+		214AD43722532A7600C7C14D /* MJRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshHeader.m; sourceTree = "<group>"; };
+		214AD43822532A7600C7C14D /* MJRefreshAutoFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoFooter.h; sourceTree = "<group>"; };
+		214AD43922532A7600C7C14D /* MJRefreshBackFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshBackFooter.m; sourceTree = "<group>"; };
+		214AD43A22532A7600C7C14D /* MJRefreshAutoFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshAutoFooter.m; sourceTree = "<group>"; };
+		214AD43B22532A7600C7C14D /* MJRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshHeader.h; sourceTree = "<group>"; };
+		214AD43C22532A7600C7C14D /* MJRefreshComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshComponent.m; sourceTree = "<group>"; };
+		214AD43D22532A7600C7C14D /* MJRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshFooter.h; sourceTree = "<group>"; };
+		214AD43E22532A7600C7C14D /* MJRefreshBackFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBackFooter.h; sourceTree = "<group>"; };
+		214AD43F22532A7600C7C14D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		214AD44222532A7600C7C14D /* AlicloudUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlicloudUtils.framework; sourceTree = "<group>"; };
+		214AD44522532A7600C7C14D /* LinkNetworkSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LinkNetworkSDK.framework; sourceTree = "<group>"; };
+		214AD44922532A7600C7C14D /* AsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncUdpSocket.m; sourceTree = "<group>"; };
+		214AD44A22532A7600C7C14D /* AsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncSocket.h; sourceTree = "<group>"; };
+		214AD44B22532A7600C7C14D /* AsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncSocket.m; sourceTree = "<group>"; };
+		214AD44C22532A7600C7C14D /* AsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncUdpSocket.h; sourceTree = "<group>"; };
+		214AD44E22532A7600C7C14D /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		214AD44F22532A7600C7C14D /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		214AD45022532A7600C7C14D /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		214AD45122532A7600C7C14D /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		214AD45222532A7600C7C14D /* CocoaAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaAsyncSocket.h; sourceTree = "<group>"; };
+		214AD45322532A7600C7C14D /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.markdown; sourceTree = "<group>"; };
+		214AD45622532A7600C7C14D /* AlinkMobileGateway.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlinkMobileGateway.framework; sourceTree = "<group>"; };
+		214AD45922532A7600C7C14D /* AlinkIoTExpress.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlinkIoTExpress.framework; sourceTree = "<group>"; };
+		214AD45A22532A7600C7C14D /* AlinkAppExpress.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlinkAppExpress.framework; sourceTree = "<group>"; };
+		214AD45B22532A7600C7C14D /* BoneChannel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BoneChannel.framework; sourceTree = "<group>"; };
+		214AD45E22532A7600C7C14D /* LPBSystem.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LPBSystem.framework; sourceTree = "<group>"; };
+		214AD45F22532A7600C7C14D /* BoneThingCapability.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BoneThingCapability.framework; sourceTree = "<group>"; };
+		214AD46022532A7600C7C14D /* IMSThingCapability.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IMSThingCapability.framework; sourceTree = "<group>"; };
+		214AD47322532A7700C7C14D /* SGSecurityBody.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SGSecurityBody.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +202,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				214AD48322532A7700C7C14D /* ALBBOpenAccountUI.framework in Frameworks */,
+				214AD47722532A7700C7C14D /* IMSAuthentication.framework in Frameworks */,
+				214AD48022532A7700C7C14D /* IMLDeviceKit.framework in Frameworks */,
+				214AD47422532A7700C7C14D /* SGMain.framework in Frameworks */,
+				214AD47A22532A7700C7C14D /* IMSAccount.framework in Frameworks */,
+				214AD47C22532A7700C7C14D /* IMSApiClient.framework in Frameworks */,
+				214AD48622532A7700C7C14D /* TBJSONModel.framework in Frameworks */,
+				214AD48522532A7700C7C14D /* ALBBOpenAccountCloud.framework in Frameworks */,
+				214AD47D22532A7700C7C14D /* CloudApiSDK.framework in Frameworks */,
+				214AD4A222532A7700C7C14D /* AlinkAppExpress.framework in Frameworks */,
+				214AD47B22532A7700C7C14D /* CloudPushSDK.framework in Frameworks */,
+				214AD47522532A7700C7C14D /* SecurityGuardSDK.framework in Frameworks */,
+				214AD47822532A7700C7C14D /* IMSLog.framework in Frameworks */,
+				214AD49A22532A7700C7C14D /* AlicloudUtils.framework in Frameworks */,
+				214AD4A322532A7700C7C14D /* BoneChannel.framework in Frameworks */,
+				214AD47F22532A7700C7C14D /* IMLBoneDeviceCenter.framework in Frameworks */,
+				214AD4A122532A7700C7C14D /* AlinkIoTExpress.framework in Frameworks */,
+				214AD49B22532A7700C7C14D /* LinkNetworkSDK.framework in Frameworks */,
+				214AD47622532A7700C7C14D /* IMLCoapBase.framework in Frameworks */,
+				214AD4A522532A7700C7C14D /* BoneThingCapability.framework in Frameworks */,
+				214AD4AC22532A7700C7C14D /* SGSecurityBody.framework in Frameworks */,
+				214AD47E22532A7700C7C14D /* IMSBonePluginKit.framework in Frameworks */,
+				214AD4A022532A7700C7C14D /* AlinkMobileGateway.framework in Frameworks */,
+				214AD4A622532A7700C7C14D /* IMSThingCapability.framework in Frameworks */,
+				214AD48422532A7700C7C14D /* ALBBOpenAccountSSO.framework in Frameworks */,
+				214AD4A422532A7700C7C14D /* LPBSystem.framework in Frameworks */,
+				214AD48122532A7700C7C14D /* IMLDeviceCenter.framework in Frameworks */,
+				214AD47922532A7700C7C14D /* UTDID.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +255,30 @@
 		214AD0522252415A00C7C14D /* libAliLiving */ = {
 			isa = PBXGroup;
 			children = (
+				214AD40B22532A7600C7C14D /* AKTBJSONModel */,
+				214AD40522532A7500C7C14D /* AlicloudALBBOpenAccount */,
+				214AD3F522532A7500C7C14D /* AlicloudApiSDK */,
+				214AD3EF22532A7500C7C14D /* AlicloudPushIoT */,
+				214AD3DD22532A7400C7C14D /* AlicloudSecurityGuardSDK */,
+				214AD3DA22532A7400C7C14D /* AlicloudSGMain */,
+				214AD47122532A7700C7C14D /* AlicloudSGSecurityBody */,
+				214AD3E922532A7500C7C14D /* AlicloudUTDID */,
+				214AD44022532A7600C7C14D /* AlicloudUtils */,
+				214AD44622532A7600C7C14D /* CocoaAsyncSocket */,
+				214AD40A22532A7600C7C14D /* Headers */,
+				214AD3E022532A7500C7C14D /* IMLCoapBase */,
+				214AD3EC22532A7500C7C14D /* IMSAccount */,
+				214AD3F222532A7500C7C14D /* IMSApiClient */,
+				214AD3E322532A7500C7C14D /* IMSAuthentication */,
+				214AD3F822532A7500C7C14D /* IMSBonePluginKit */,
+				214AD3FB22532A7500C7C14D /* IMSDeviceCenter */,
+				214AD45422532A7600C7C14D /* IMSDeviceGateway */,
+				214AD3E622532A7500C7C14D /* IMSLog */,
+				214AD45722532A7600C7C14D /* IMSMobileChannel */,
+				214AD45C22532A7600C7C14D /* IMSThingCapability */,
+				214AD44322532A7600C7C14D /* LinkNetworkSDK */,
+				214AD40E22532A7600C7C14D /* MJRefresh */,
+				214AD40022532A7500C7C14D /* Reachability */,
 				214AD05C2252421F00C7C14D /* Ali */,
 				214AD0732252421F00C7C14D /* Network */,
 				214AD0782252421F00C7C14D /* WebSocket */,
@@ -170,6 +358,498 @@
 			path = WebSocket;
 			sourceTree = "<group>";
 		};
+		214AD3DA22532A7400C7C14D /* AlicloudSGMain */ = {
+			isa = PBXGroup;
+			children = (
+				214AD3DB22532A7400C7C14D /* SGMain */,
+			);
+			path = AlicloudSGMain;
+			sourceTree = "<group>";
+		};
+		214AD3DB22532A7400C7C14D /* SGMain */ = {
+			isa = PBXGroup;
+			children = (
+				214AD3DC22532A7400C7C14D /* SGMain.framework */,
+			);
+			path = SGMain;
+			sourceTree = "<group>";
+		};
+		214AD3DD22532A7400C7C14D /* AlicloudSecurityGuardSDK */ = {
+			isa = PBXGroup;
+			children = (
+				214AD3DE22532A7400C7C14D /* SecurityGuardSDK */,
+			);
+			path = AlicloudSecurityGuardSDK;
+			sourceTree = "<group>";
+		};
+		214AD3DE22532A7400C7C14D /* SecurityGuardSDK */ = {
+			isa = PBXGroup;
+			children = (
+				214AD3DF22532A7400C7C14D /* SecurityGuardSDK.framework */,
+			);
+			path = SecurityGuardSDK;
+			sourceTree = "<group>";
+		};
+		214AD3E022532A7500C7C14D /* IMLCoapBase */ = {
+			isa = PBXGroup;
+			children = (
+				214AD3E122532A7500C7C14D /* IMLCoapBase */,
+			);
+			path = IMLCoapBase;
+			sourceTree = "<group>";
+		};
+		214AD3E122532A7500C7C14D /* IMLCoapBase */ = {
+			isa = PBXGroup;
+			children = (
+				214AD3E222532A7500C7C14D /* IMLCoapBase.framework */,
+			);
+			path = IMLCoapBase;
+			sourceTree = "<group>";
+		};
+		214AD3E322532A7500C7C14D /* IMSAuthentication */ = {
+			isa = PBXGroup;
+			children = (
+				214AD3E422532A7500C7C14D /* IMSAuthentication */,
+			);
+			path = IMSAuthentication;
+			sourceTree = "<group>";
+		};
+		214AD3E422532A7500C7C14D /* IMSAuthentication */ = {
+			isa = PBXGroup;
+			children = (
+				214AD3E522532A7500C7C14D /* IMSAuthentication.framework */,
+			);
+			path = IMSAuthentication;
+			sourceTree = "<group>";
+		};
+		214AD3E622532A7500C7C14D /* IMSLog */ = {
+			isa = PBXGroup;
+			children = (
+				214AD3E722532A7500C7C14D /* IMSLog */,
+			);
+			path = IMSLog;
+			sourceTree = "<group>";
+		};
+		214AD3E722532A7500C7C14D /* IMSLog */ = {
+			isa = PBXGroup;
+			children = (
+				214AD3E822532A7500C7C14D /* IMSLog.framework */,
+			);
+			path = IMSLog;
+			sourceTree = "<group>";
+		};
+		214AD3E922532A7500C7C14D /* AlicloudUTDID */ = {
+			isa = PBXGroup;
+			children = (
+				214AD3EA22532A7500C7C14D /* utdid */,
+			);
+			path = AlicloudUTDID;
+			sourceTree = "<group>";
+		};
+		214AD3EA22532A7500C7C14D /* utdid */ = {
+			isa = PBXGroup;
+			children = (
+				214AD3EB22532A7500C7C14D /* UTDID.framework */,
+			);
+			path = utdid;
+			sourceTree = "<group>";
+		};
+		214AD3EC22532A7500C7C14D /* IMSAccount */ = {
+			isa = PBXGroup;
+			children = (
+				214AD3ED22532A7500C7C14D /* IMSAccount */,
+			);
+			path = IMSAccount;
+			sourceTree = "<group>";
+		};
+		214AD3ED22532A7500C7C14D /* IMSAccount */ = {
+			isa = PBXGroup;
+			children = (
+				214AD3EE22532A7500C7C14D /* IMSAccount.framework */,
+			);
+			path = IMSAccount;
+			sourceTree = "<group>";
+		};
+		214AD3EF22532A7500C7C14D /* AlicloudPushIoT */ = {
+			isa = PBXGroup;
+			children = (
+				214AD3F022532A7500C7C14D /* push */,
+			);
+			path = AlicloudPushIoT;
+			sourceTree = "<group>";
+		};
+		214AD3F022532A7500C7C14D /* push */ = {
+			isa = PBXGroup;
+			children = (
+				214AD3F122532A7500C7C14D /* CloudPushSDK.framework */,
+			);
+			path = push;
+			sourceTree = "<group>";
+		};
+		214AD3F222532A7500C7C14D /* IMSApiClient */ = {
+			isa = PBXGroup;
+			children = (
+				214AD3F322532A7500C7C14D /* IMSApiClient */,
+			);
+			path = IMSApiClient;
+			sourceTree = "<group>";
+		};
+		214AD3F322532A7500C7C14D /* IMSApiClient */ = {
+			isa = PBXGroup;
+			children = (
+				214AD3F422532A7500C7C14D /* IMSApiClient.framework */,
+			);
+			path = IMSApiClient;
+			sourceTree = "<group>";
+		};
+		214AD3F522532A7500C7C14D /* AlicloudApiSDK */ = {
+			isa = PBXGroup;
+			children = (
+				214AD3F622532A7500C7C14D /* CloudApiSdk */,
+			);
+			path = AlicloudApiSDK;
+			sourceTree = "<group>";
+		};
+		214AD3F622532A7500C7C14D /* CloudApiSdk */ = {
+			isa = PBXGroup;
+			children = (
+				214AD3F722532A7500C7C14D /* CloudApiSDK.framework */,
+			);
+			path = CloudApiSdk;
+			sourceTree = "<group>";
+		};
+		214AD3F822532A7500C7C14D /* IMSBonePluginKit */ = {
+			isa = PBXGroup;
+			children = (
+				214AD3F922532A7500C7C14D /* IMSBonePluginKit */,
+			);
+			path = IMSBonePluginKit;
+			sourceTree = "<group>";
+		};
+		214AD3F922532A7500C7C14D /* IMSBonePluginKit */ = {
+			isa = PBXGroup;
+			children = (
+				214AD3FA22532A7500C7C14D /* IMSBonePluginKit.framework */,
+			);
+			path = IMSBonePluginKit;
+			sourceTree = "<group>";
+		};
+		214AD3FB22532A7500C7C14D /* IMSDeviceCenter */ = {
+			isa = PBXGroup;
+			children = (
+				214AD3FC22532A7500C7C14D /* IMSDeviceCenter */,
+			);
+			path = IMSDeviceCenter;
+			sourceTree = "<group>";
+		};
+		214AD3FC22532A7500C7C14D /* IMSDeviceCenter */ = {
+			isa = PBXGroup;
+			children = (
+				214AD3FD22532A7500C7C14D /* IMLBoneDeviceCenter.framework */,
+				214AD3FE22532A7500C7C14D /* IMLDeviceKit.framework */,
+				214AD3FF22532A7500C7C14D /* IMLDeviceCenter.framework */,
+			);
+			path = IMSDeviceCenter;
+			sourceTree = "<group>";
+		};
+		214AD40022532A7500C7C14D /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				214AD40122532A7500C7C14D /* Reachability.m */,
+				214AD40222532A7500C7C14D /* LICENCE.txt */,
+				214AD40322532A7500C7C14D /* README.md */,
+				214AD40422532A7500C7C14D /* Reachability.h */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		214AD40522532A7500C7C14D /* AlicloudALBBOpenAccount */ = {
+			isa = PBXGroup;
+			children = (
+				214AD40622532A7500C7C14D /* openaccount */,
+			);
+			path = AlicloudALBBOpenAccount;
+			sourceTree = "<group>";
+		};
+		214AD40622532A7500C7C14D /* openaccount */ = {
+			isa = PBXGroup;
+			children = (
+				214AD40722532A7500C7C14D /* ALBBOpenAccountUI.framework */,
+				214AD40822532A7500C7C14D /* ALBBOpenAccountSSO.framework */,
+				214AD40922532A7500C7C14D /* ALBBOpenAccountCloud.framework */,
+			);
+			path = openaccount;
+			sourceTree = "<group>";
+		};
+		214AD40A22532A7600C7C14D /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		214AD40B22532A7600C7C14D /* AKTBJSONModel */ = {
+			isa = PBXGroup;
+			children = (
+				214AD40C22532A7600C7C14D /* iot-sdk-jsonmodel */,
+			);
+			path = AKTBJSONModel;
+			sourceTree = "<group>";
+		};
+		214AD40C22532A7600C7C14D /* iot-sdk-jsonmodel */ = {
+			isa = PBXGroup;
+			children = (
+				214AD40D22532A7600C7C14D /* TBJSONModel.framework */,
+			);
+			path = "iot-sdk-jsonmodel";
+			sourceTree = "<group>";
+		};
+		214AD40E22532A7600C7C14D /* MJRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				214AD40F22532A7600C7C14D /* LICENSE */,
+				214AD41022532A7600C7C14D /* MJRefresh */,
+				214AD43F22532A7600C7C14D /* README.md */,
+			);
+			path = MJRefresh;
+			sourceTree = "<group>";
+		};
+		214AD41022532A7600C7C14D /* MJRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				214AD41122532A7600C7C14D /* UIScrollView+MJRefresh.m */,
+				214AD41222532A7600C7C14D /* MJRefreshConst.m */,
+				214AD41322532A7600C7C14D /* UIScrollView+MJExtension.h */,
+				214AD41422532A7600C7C14D /* MJRefresh.h */,
+				214AD41522532A7600C7C14D /* NSBundle+MJRefresh.h */,
+				214AD41622532A7600C7C14D /* MJRefresh.bundle */,
+				214AD41722532A7600C7C14D /* UIView+MJExtension.h */,
+				214AD41822532A7600C7C14D /* UIScrollView+MJExtension.m */,
+				214AD41922532A7600C7C14D /* MJRefreshConst.h */,
+				214AD41A22532A7600C7C14D /* UIScrollView+MJRefresh.h */,
+				214AD41B22532A7600C7C14D /* NSBundle+MJRefresh.m */,
+				214AD41C22532A7600C7C14D /* UIView+MJExtension.m */,
+				214AD41D22532A7600C7C14D /* Custom */,
+				214AD43422532A7600C7C14D /* Base */,
+			);
+			path = MJRefresh;
+			sourceTree = "<group>";
+		};
+		214AD41D22532A7600C7C14D /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				214AD41E22532A7600C7C14D /* Footer */,
+				214AD42D22532A7600C7C14D /* Header */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		214AD41E22532A7600C7C14D /* Footer */ = {
+			isa = PBXGroup;
+			children = (
+				214AD41F22532A7600C7C14D /* Back */,
+				214AD42622532A7600C7C14D /* Auto */,
+			);
+			path = Footer;
+			sourceTree = "<group>";
+		};
+		214AD41F22532A7600C7C14D /* Back */ = {
+			isa = PBXGroup;
+			children = (
+				214AD42022532A7600C7C14D /* MJRefreshBackGifFooter.h */,
+				214AD42122532A7600C7C14D /* MJRefreshBackStateFooter.h */,
+				214AD42222532A7600C7C14D /* MJRefreshBackNormalFooter.h */,
+				214AD42322532A7600C7C14D /* MJRefreshBackGifFooter.m */,
+				214AD42422532A7600C7C14D /* MJRefreshBackStateFooter.m */,
+				214AD42522532A7600C7C14D /* MJRefreshBackNormalFooter.m */,
+			);
+			path = Back;
+			sourceTree = "<group>";
+		};
+		214AD42622532A7600C7C14D /* Auto */ = {
+			isa = PBXGroup;
+			children = (
+				214AD42722532A7600C7C14D /* MJRefreshAutoStateFooter.h */,
+				214AD42822532A7600C7C14D /* MJRefreshAutoNormalFooter.h */,
+				214AD42922532A7600C7C14D /* MJRefreshAutoGifFooter.h */,
+				214AD42A22532A7600C7C14D /* MJRefreshAutoStateFooter.m */,
+				214AD42B22532A7600C7C14D /* MJRefreshAutoGifFooter.m */,
+				214AD42C22532A7600C7C14D /* MJRefreshAutoNormalFooter.m */,
+			);
+			path = Auto;
+			sourceTree = "<group>";
+		};
+		214AD42D22532A7600C7C14D /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				214AD42E22532A7600C7C14D /* MJRefreshNormalHeader.m */,
+				214AD42F22532A7600C7C14D /* MJRefreshStateHeader.h */,
+				214AD43022532A7600C7C14D /* MJRefreshGifHeader.h */,
+				214AD43122532A7600C7C14D /* MJRefreshNormalHeader.h */,
+				214AD43222532A7600C7C14D /* MJRefreshStateHeader.m */,
+				214AD43322532A7600C7C14D /* MJRefreshGifHeader.m */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		214AD43422532A7600C7C14D /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				214AD43522532A7600C7C14D /* MJRefreshFooter.m */,
+				214AD43622532A7600C7C14D /* MJRefreshComponent.h */,
+				214AD43722532A7600C7C14D /* MJRefreshHeader.m */,
+				214AD43822532A7600C7C14D /* MJRefreshAutoFooter.h */,
+				214AD43922532A7600C7C14D /* MJRefreshBackFooter.m */,
+				214AD43A22532A7600C7C14D /* MJRefreshAutoFooter.m */,
+				214AD43B22532A7600C7C14D /* MJRefreshHeader.h */,
+				214AD43C22532A7600C7C14D /* MJRefreshComponent.m */,
+				214AD43D22532A7600C7C14D /* MJRefreshFooter.h */,
+				214AD43E22532A7600C7C14D /* MJRefreshBackFooter.h */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		214AD44022532A7600C7C14D /* AlicloudUtils */ = {
+			isa = PBXGroup;
+			children = (
+				214AD44122532A7600C7C14D /* utils */,
+			);
+			path = AlicloudUtils;
+			sourceTree = "<group>";
+		};
+		214AD44122532A7600C7C14D /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				214AD44222532A7600C7C14D /* AlicloudUtils.framework */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		214AD44322532A7600C7C14D /* LinkNetworkSDK */ = {
+			isa = PBXGroup;
+			children = (
+				214AD44422532A7600C7C14D /* LinkNetworkSDK */,
+			);
+			path = LinkNetworkSDK;
+			sourceTree = "<group>";
+		};
+		214AD44422532A7600C7C14D /* LinkNetworkSDK */ = {
+			isa = PBXGroup;
+			children = (
+				214AD44522532A7600C7C14D /* LinkNetworkSDK.framework */,
+			);
+			path = LinkNetworkSDK;
+			sourceTree = "<group>";
+		};
+		214AD44622532A7600C7C14D /* CocoaAsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				214AD44722532A7600C7C14D /* Source */,
+				214AD45322532A7600C7C14D /* README.markdown */,
+			);
+			path = CocoaAsyncSocket;
+			sourceTree = "<group>";
+		};
+		214AD44722532A7600C7C14D /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				214AD44822532A7600C7C14D /* RunLoop */,
+				214AD44D22532A7600C7C14D /* GCD */,
+				214AD45222532A7600C7C14D /* CocoaAsyncSocket.h */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		214AD44822532A7600C7C14D /* RunLoop */ = {
+			isa = PBXGroup;
+			children = (
+				214AD44922532A7600C7C14D /* AsyncUdpSocket.m */,
+				214AD44A22532A7600C7C14D /* AsyncSocket.h */,
+				214AD44B22532A7600C7C14D /* AsyncSocket.m */,
+				214AD44C22532A7600C7C14D /* AsyncUdpSocket.h */,
+			);
+			path = RunLoop;
+			sourceTree = "<group>";
+		};
+		214AD44D22532A7600C7C14D /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				214AD44E22532A7600C7C14D /* GCDAsyncUdpSocket.m */,
+				214AD44F22532A7600C7C14D /* GCDAsyncSocket.m */,
+				214AD45022532A7600C7C14D /* GCDAsyncUdpSocket.h */,
+				214AD45122532A7600C7C14D /* GCDAsyncSocket.h */,
+			);
+			path = GCD;
+			sourceTree = "<group>";
+		};
+		214AD45422532A7600C7C14D /* IMSDeviceGateway */ = {
+			isa = PBXGroup;
+			children = (
+				214AD45522532A7600C7C14D /* IMSDeviceGateway */,
+			);
+			path = IMSDeviceGateway;
+			sourceTree = "<group>";
+		};
+		214AD45522532A7600C7C14D /* IMSDeviceGateway */ = {
+			isa = PBXGroup;
+			children = (
+				214AD45622532A7600C7C14D /* AlinkMobileGateway.framework */,
+			);
+			path = IMSDeviceGateway;
+			sourceTree = "<group>";
+		};
+		214AD45722532A7600C7C14D /* IMSMobileChannel */ = {
+			isa = PBXGroup;
+			children = (
+				214AD45822532A7600C7C14D /* IMSMobileChannel */,
+			);
+			path = IMSMobileChannel;
+			sourceTree = "<group>";
+		};
+		214AD45822532A7600C7C14D /* IMSMobileChannel */ = {
+			isa = PBXGroup;
+			children = (
+				214AD45922532A7600C7C14D /* AlinkIoTExpress.framework */,
+				214AD45A22532A7600C7C14D /* AlinkAppExpress.framework */,
+				214AD45B22532A7600C7C14D /* BoneChannel.framework */,
+			);
+			path = IMSMobileChannel;
+			sourceTree = "<group>";
+		};
+		214AD45C22532A7600C7C14D /* IMSThingCapability */ = {
+			isa = PBXGroup;
+			children = (
+				214AD45D22532A7600C7C14D /* IMSThingCapability */,
+			);
+			path = IMSThingCapability;
+			sourceTree = "<group>";
+		};
+		214AD45D22532A7600C7C14D /* IMSThingCapability */ = {
+			isa = PBXGroup;
+			children = (
+				214AD45E22532A7600C7C14D /* LPBSystem.framework */,
+				214AD45F22532A7600C7C14D /* BoneThingCapability.framework */,
+				214AD46022532A7600C7C14D /* IMSThingCapability.framework */,
+			);
+			path = IMSThingCapability;
+			sourceTree = "<group>";
+		};
+		214AD47122532A7700C7C14D /* AlicloudSGSecurityBody */ = {
+			isa = PBXGroup;
+			children = (
+				214AD47222532A7700C7C14D /* SGSecurityBody */,
+			);
+			path = AlicloudSGSecurityBody;
+			sourceTree = "<group>";
+		};
+		214AD47222532A7700C7C14D /* SGSecurityBody */ = {
+			isa = PBXGroup;
+			children = (
+				214AD47322532A7700C7C14D /* SGSecurityBody.framework */,
+			);
+			path = SGSecurityBody;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -226,13 +906,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				214AD49122532A7700C7C14D /* MJRefreshAutoNormalFooter.m in Sources */,
+				214AD49522532A7700C7C14D /* MJRefreshFooter.m in Sources */,
 				214AD0802252421F00C7C14D /* WebSocketClient.m in Sources */,
+				214AD49022532A7700C7C14D /* MJRefreshAutoGifFooter.m in Sources */,
+				214AD48F22532A7700C7C14D /* MJRefreshAutoStateFooter.m in Sources */,
 				214AD0552252415A00C7C14D /* libAliLiving.m in Sources */,
+				214AD48222532A7700C7C14D /* Reachability.m in Sources */,
+				214AD49D22532A7700C7C14D /* AsyncSocket.m in Sources */,
+				214AD49222532A7700C7C14D /* MJRefreshNormalHeader.m in Sources */,
 				214AD07C2252421F00C7C14D /* IMSOpenAccount.m in Sources */,
+				214AD48822532A7700C7C14D /* MJRefreshConst.m in Sources */,
+				214AD49F22532A7700C7C14D /* GCDAsyncSocket.m in Sources */,
+				214AD48E22532A7700C7C14D /* MJRefreshBackNormalFooter.m in Sources */,
+				214AD49422532A7700C7C14D /* MJRefreshGifHeader.m in Sources */,
 				214AD07D2252421F00C7C14D /* IMSIotAuth.m in Sources */,
+				214AD48722532A7700C7C14D /* UIScrollView+MJRefresh.m in Sources */,
+				214AD48C22532A7700C7C14D /* MJRefreshBackGifFooter.m in Sources */,
+				214AD49E22532A7700C7C14D /* GCDAsyncUdpSocket.m in Sources */,
+				214AD48A22532A7700C7C14D /* NSBundle+MJRefresh.m in Sources */,
 				214AD07F2252421F00C7C14D /* IMSNetWorkServer.m in Sources */,
+				214AD48B22532A7700C7C14D /* UIView+MJExtension.m in Sources */,
+				214AD49722532A7700C7C14D /* MJRefreshBackFooter.m in Sources */,
+				214AD49322532A7700C7C14D /* MJRefreshStateHeader.m in Sources */,
+				214AD49622532A7700C7C14D /* MJRefreshHeader.m in Sources */,
+				214AD48D22532A7700C7C14D /* MJRefreshBackStateFooter.m in Sources */,
+				214AD49822532A7700C7C14D /* MJRefreshAutoFooter.m in Sources */,
+				214AD49922532A7700C7C14D /* MJRefreshComponent.m in Sources */,
+				214AD48922532A7700C7C14D /* UIScrollView+MJExtension.m in Sources */,
 				214AD07E2252421F00C7C14D /* RNSendToJsReact.m in Sources */,
 				214AD07B2252421F00C7C14D /* FYSDK.m in Sources */,
+				214AD49C22532A7700C7C14D /* AsyncUdpSocket.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +1060,29 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GHVQG48H4A;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libAliLiving/AlicloudSGMain/SGMain",
+					"$(PROJECT_DIR)/libAliLiving/AlicloudSecurityGuardSDK/SecurityGuardSDK",
+					"$(PROJECT_DIR)/libAliLiving/IMLCoapBase/IMLCoapBase",
+					"$(PROJECT_DIR)/libAliLiving/IMSAuthentication/IMSAuthentication",
+					"$(PROJECT_DIR)/libAliLiving/IMSLog/IMSLog",
+					"$(PROJECT_DIR)/libAliLiving/AlicloudUTDID/utdid",
+					"$(PROJECT_DIR)/libAliLiving/IMSAccount/IMSAccount",
+					"$(PROJECT_DIR)/libAliLiving/AlicloudPushIoT/push",
+					"$(PROJECT_DIR)/libAliLiving/IMSApiClient/IMSApiClient",
+					"$(PROJECT_DIR)/libAliLiving/AlicloudApiSDK/CloudApiSdk",
+					"$(PROJECT_DIR)/libAliLiving/IMSBonePluginKit/IMSBonePluginKit",
+					"$(PROJECT_DIR)/libAliLiving/IMSDeviceCenter/IMSDeviceCenter",
+					"$(PROJECT_DIR)/libAliLiving/AlicloudALBBOpenAccount/openaccount",
+					"$(PROJECT_DIR)/libAliLiving/AKTBJSONModel/iot-sdk-jsonmodel",
+					"$(PROJECT_DIR)/libAliLiving/AlicloudUtils/utils",
+					"$(PROJECT_DIR)/libAliLiving/LinkNetworkSDK/LinkNetworkSDK",
+					"$(PROJECT_DIR)/libAliLiving/IMSDeviceGateway/IMSDeviceGateway",
+					"$(PROJECT_DIR)/libAliLiving/IMSMobileChannel/IMSMobileChannel",
+					"$(PROJECT_DIR)/libAliLiving/IMSThingCapability/IMSThingCapability",
+					"$(PROJECT_DIR)/libAliLiving/AlicloudSGSecurityBody/SGSecurityBody",
+				);
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../react-native/React/**";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -369,6 +1096,29 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GHVQG48H4A;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libAliLiving/AlicloudSGMain/SGMain",
+					"$(PROJECT_DIR)/libAliLiving/AlicloudSecurityGuardSDK/SecurityGuardSDK",
+					"$(PROJECT_DIR)/libAliLiving/IMLCoapBase/IMLCoapBase",
+					"$(PROJECT_DIR)/libAliLiving/IMSAuthentication/IMSAuthentication",
+					"$(PROJECT_DIR)/libAliLiving/IMSLog/IMSLog",
+					"$(PROJECT_DIR)/libAliLiving/AlicloudUTDID/utdid",
+					"$(PROJECT_DIR)/libAliLiving/IMSAccount/IMSAccount",
+					"$(PROJECT_DIR)/libAliLiving/AlicloudPushIoT/push",
+					"$(PROJECT_DIR)/libAliLiving/IMSApiClient/IMSApiClient",
+					"$(PROJECT_DIR)/libAliLiving/AlicloudApiSDK/CloudApiSdk",
+					"$(PROJECT_DIR)/libAliLiving/IMSBonePluginKit/IMSBonePluginKit",
+					"$(PROJECT_DIR)/libAliLiving/IMSDeviceCenter/IMSDeviceCenter",
+					"$(PROJECT_DIR)/libAliLiving/AlicloudALBBOpenAccount/openaccount",
+					"$(PROJECT_DIR)/libAliLiving/AKTBJSONModel/iot-sdk-jsonmodel",
+					"$(PROJECT_DIR)/libAliLiving/AlicloudUtils/utils",
+					"$(PROJECT_DIR)/libAliLiving/LinkNetworkSDK/LinkNetworkSDK",
+					"$(PROJECT_DIR)/libAliLiving/IMSDeviceGateway/IMSDeviceGateway",
+					"$(PROJECT_DIR)/libAliLiving/IMSMobileChannel/IMSMobileChannel",
+					"$(PROJECT_DIR)/libAliLiving/IMSThingCapability/IMSThingCapability",
+					"$(PROJECT_DIR)/libAliLiving/AlicloudSGSecurityBody/SGSecurityBody",
+				);
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../react-native/React/**";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
