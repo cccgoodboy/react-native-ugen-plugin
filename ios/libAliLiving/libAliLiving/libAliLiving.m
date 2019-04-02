@@ -18,7 +18,7 @@
 @interface libAliLiving()<RCTBridgeModule>
 @end
 @implementation libAliLiving
-RCT_EXPORT_MODULE(AliLiving);
+RCT_EXPORT_MODULE(UgenAliLiving);
 //登录
 RCT_REMAP_METHOD(login, resolve:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)rejecter){
     UIViewController *con = (UIViewController *)[[UIApplication sharedApplication] keyWindow].rootViewController;

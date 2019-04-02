@@ -1,7 +1,7 @@
 'use strict';
 
 import { NativeModules,NativeEventEmitter,Platform,DeviceEventEmitter } from 'react-native';
-const sdk = NativeModules.AliLiving;
+const sdk = NativeModules.UgenAliLiving;
 // const listen = NativeModules.NativeListener;
 // const listenModule = new NativeEventEmitter(listen);
 const LISTEN = [
