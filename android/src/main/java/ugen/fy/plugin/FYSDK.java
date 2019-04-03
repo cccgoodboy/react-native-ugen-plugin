@@ -49,7 +49,6 @@ import com.aliyun.iot.aep.sdk.login.ILoginCallback;
 import com.aliyun.iot.aep.sdk.login.ILogoutCallback;
 import com.aliyun.iot.aep.sdk.login.LoginBusiness;
 import com.facebook.react.bridge.Promise;
-import com.facebook.react.views.textinput.ReactEditText;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -76,6 +75,7 @@ public class FYSDK {
 
     public static final String TAG = FYSDK.class.getSimpleName();
     public static FYSDK getInstance(Context context,Application application){
+
         if (mSDK == null){
             mSDK =new FYSDK(context,application);
         }
@@ -83,34 +83,69 @@ public class FYSDK {
     }
 
     public FYSDK(Context context,Application application){
-
         this.mContext = context;
         this.mApplication = application;
         //飞燕初始化
-        try {
-            SecurityInit.Initialize(this.mContext);
-        } catch (JAQException ex) {
-            Log.e(TAG, "security-sdk-initialize-failed");
-        } catch (Exception ex) {
-            Log.e(TAG, "security-sdk-initialize-failed");
-        }
+//        try {
+//            SecurityInit.Initialize(this.mContext);
+//        } catch (JAQException ex) {
+//            Log.e(TAG, "security-sdk-initialize-failed");
+//        } catch (Exception ex) {
+//            Log.e(TAG, "security-sdk-initialize-failed");
+//        }
 
         Log.d(TAG,"FYSDK init");
         // 初始化无线保镖
         try {
             SecurityInit.Initialize(this.mContext);
         } catch (JAQException ex) {
+            String errorMsg = ex.getMessage();
+            int errorCode = ex.getErrorCode();
             Log.e(TAG, "security-sdk-initialize-failed");
         } catch (Exception ex) {
             Log.e(TAG, "security-sdk-initialize-failed");
         }
-        InitResultCallback callback =  new InitResultCallback() {
-            @Override
-            public void onFailure(int i, String s) {
-                //从这里可以打印出失败原因
-                Log.i(TAG,"init fail   ------"+s);
-            }
-
+//        InitResultCallback callback =  new InitResultCallback() {
+//            @Override
+//            public void onFailure(int i, String s) {
+//                //从这里可以打印出失败原因
+//                Log.i(TAG,"init fail   ------"+s);
+//            }
+//
+//            @Override
+//            public void onSuccess() {
+//                ALog.setLevel(ALog.LEVEL_DEBUG);
+//
+//                Log.i(TAG,"init success");
+//                // 初始化 IoTAPIClient
+//                IoTAPIClientImpl.InitializeConfig config = new IoTAPIClientImpl.InitializeConfig();
+//                config.host = "api.link.aliyun.com";
+//                config.apiEnv = Env.RELEASE;
+//                IoTAPIClientImpl impl = IoTAPIClientImpl.getInstance();
+//                impl.init(mContext, config);
+////                impl.registerTracker(new MainActivity.Tracker());
+//
+//                String appKey = APIGatewayHttpAdapterImpl.getAppKey(mContext, "114d");
+//                try{
+//                    //api认证通道
+//                    IoTCredentialManageImpl.init(appKey);
+//                    IoTAuthProvider provider = new IoTCredentialProviderImpl(IoTCredentialManageImpl.getInstance(FYSDK.this.mApplication));
+//                    impl.registerIoTAuthProvider("iotAuth", provider);
+//                }catch (Exception e){
+//                    Log.e(TAG,e.getMessage(),e);
+//                }
+//
+//                //长连接初始化
+//                MobileConnectConfig mobileConfig = new MobileConnectConfig();
+//                // 设置 appKey 和 authCode(必填)
+//                mobileConfig.appkey =appKey;
+//                mobileConfig.securityGuardAuthcode = "114d";
+//                MobileChannel.getInstance().startConnect(mContext, mobileConfig, mIMobileConnectListener);
+//            }
+//        };
+//
+//        LoginBusiness.init(this.mContext,new OALoginAdapter(this.mContext,callback),"ONLINE");
+        LoginBusiness.init(this.mContext, new OALoginAdapter(this.mContext, new InitResultCallback() {
             @Override
             public void onSuccess() {
                 ALog.setLevel(ALog.LEVEL_DEBUG);
@@ -140,10 +175,15 @@ public class FYSDK {
                 mobileConfig.appkey =appKey;
                 mobileConfig.securityGuardAuthcode = "114d";
                 MobileChannel.getInstance().startConnect(mContext, mobileConfig, mIMobileConnectListener);
-            }
-        };
 
-        LoginBusiness.init(this.mContext,new OALoginAdapter(this.mContext,callback),"ONLINE");
+            }
+
+            @Override
+            public void onFailure(int i, String s) {
+
+                Log.d(TAG,s);
+            }
+        }),false,"ONLINE");
     }
     //登录
     public void login(ILoginCallback callback){
@@ -173,7 +213,7 @@ public class FYSDK {
                             device.put("token", deviceInfo.token);
                         }
                         device.put("by","scanLocation");
-                        event.onEvent("scanLocationUnDevice",device);
+                        event.onEvent("scanLocationDevice",device);
                     }catch (JSONException e){
                         Log.e(TAG,e.getMessage());
                     }
@@ -202,20 +242,27 @@ public class FYSDK {
                 Log.i(TAG,"onPreCheck");
                 JSONObject json = new JSONObject();
                 try {
-                    json.put("preCheck",b);
+                    json.put("state","onPreCheck");
                     if(!b) {
-                        json.put("errorCode", dcErrorCode.code);
+                        json.put("result", dcErrorCode.code);
                         json.put("codeName",dcErrorCode.codeName);
                     }
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
-                event.onEvent("onPreCheck",json);
+                event.onEvent("onProvisionedResult",json);
             }
 
             @Override
             public void onProvisionPrepare(int i) {
-                event.onEvent("onProvisionPrepare",null);
+                JSONObject json = new JSONObject();
+                try {
+                    json.put("state","onProvisionPrepare");
+                    json.put("result",String.valueOf(i));
+                } catch (JSONException e){
+                    e.printStackTrace();
+                }
+                event.onEvent("onProvisionedResult",json);
             }
 
             @Override
@@ -228,11 +275,12 @@ public class FYSDK {
                 Log.i(TAG,"onProvisionStatus");
                 JSONObject json = new JSONObject();
                 try {
-                    json.put("code",provisionStatus.code());
+                    json.put("result",provisionStatus.code());
+                    json.put("state","onProvisionStatus");
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
-                event.onEvent("onProvisionStatus",json);
+                event.onEvent("onProvisionedResult",json);
             }
 
             @Override
@@ -248,12 +296,17 @@ public class FYSDK {
                         }else {
                             device.put("token","");
                         }
-                        event.onEvent("onProvisionedResult",device);
+                        JSONObject eventJson = new JSONObject();
+                        try {
+                            eventJson.put("state","onProvisionedResult");
+                            eventJson.put("result",device);
+                        } catch (JSONException e){
+                            event.onEvent("error",null);
+                        }
+                        event.onEvent("onProvisionedResult",eventJson);
                     }else{
                         event.onEvent("error",device);
                     }
-
-
                 } catch (JSONException e) {
                     event.onError("error", e);
                 }

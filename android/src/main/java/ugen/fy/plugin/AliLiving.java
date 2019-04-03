@@ -7,7 +7,6 @@ import com.aliyun.alink.business.devicecenter.api.discovery.DiscoveryType;
 import com.aliyun.iot.aep.sdk.apiclient.callback.IoTCallback;
 import com.aliyun.iot.aep.sdk.apiclient.callback.IoTResponse;
 import com.aliyun.iot.aep.sdk.apiclient.request.IoTRequest;
-import com.aliyun.iot.aep.sdk.credential.IotCredentialManager.IoTCredentialListener;
 import com.aliyun.iot.aep.sdk.login.ILoginCallback;
 import com.aliyun.iot.aep.sdk.login.ILogoutCallback;
 import com.facebook.react.bridge.Promise;
@@ -39,7 +38,11 @@ public class AliLiving extends ReactContextBaseJavaModule {
     }
     @Override
     public String getName() {
-        return "AliLiving";
+        return "UgenAliLiving";
+    }
+    @ReactMethod
+    public void instanceSDK(){
+
     }
     @ReactMethod
     public void login(final Promise promise){
@@ -137,9 +140,9 @@ public class AliLiving extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    public void toggleProvision(String ssid,String password,int timeout){
+    public void toggleProvision(String ssid,String password,String timeout){
         Log.d(TAG,"toggleProvision:"+ssid+"-"+password+"-"+timeout);
-        this.sdk.toggleProvision(ssid,password,timeout);
+        this.sdk.toggleProvision(ssid,password,Integer.valueOf(timeout));
     }
     @ReactMethod
     public void getDeviceToken(String productKey,String deviceName,String timeout,final Promise promise){
