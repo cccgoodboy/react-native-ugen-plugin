@@ -1060,29 +1060,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GHVQG48H4A;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/libAliLiving/AlicloudSGMain/SGMain",
-					"$(PROJECT_DIR)/libAliLiving/AlicloudSecurityGuardSDK/SecurityGuardSDK",
-					"$(PROJECT_DIR)/libAliLiving/IMLCoapBase/IMLCoapBase",
-					"$(PROJECT_DIR)/libAliLiving/IMSAuthentication/IMSAuthentication",
-					"$(PROJECT_DIR)/libAliLiving/IMSLog/IMSLog",
-					"$(PROJECT_DIR)/libAliLiving/AlicloudUTDID/utdid",
-					"$(PROJECT_DIR)/libAliLiving/IMSAccount/IMSAccount",
-					"$(PROJECT_DIR)/libAliLiving/AlicloudPushIoT/push",
-					"$(PROJECT_DIR)/libAliLiving/IMSApiClient/IMSApiClient",
-					"$(PROJECT_DIR)/libAliLiving/AlicloudApiSDK/CloudApiSdk",
-					"$(PROJECT_DIR)/libAliLiving/IMSBonePluginKit/IMSBonePluginKit",
-					"$(PROJECT_DIR)/libAliLiving/IMSDeviceCenter/IMSDeviceCenter",
-					"$(PROJECT_DIR)/libAliLiving/AlicloudALBBOpenAccount/openaccount",
-					"$(PROJECT_DIR)/libAliLiving/AKTBJSONModel/iot-sdk-jsonmodel",
-					"$(PROJECT_DIR)/libAliLiving/AlicloudUtils/utils",
-					"$(PROJECT_DIR)/libAliLiving/LinkNetworkSDK/LinkNetworkSDK",
-					"$(PROJECT_DIR)/libAliLiving/IMSDeviceGateway/IMSDeviceGateway",
-					"$(PROJECT_DIR)/libAliLiving/IMSMobileChannel/IMSMobileChannel",
-					"$(PROJECT_DIR)/libAliLiving/IMSThingCapability/IMSThingCapability",
-					"$(PROJECT_DIR)/libAliLiving/AlicloudSGSecurityBody/SGSecurityBody",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../react-native/React/**";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1096,29 +1074,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GHVQG48H4A;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/libAliLiving/AlicloudSGMain/SGMain",
-					"$(PROJECT_DIR)/libAliLiving/AlicloudSecurityGuardSDK/SecurityGuardSDK",
-					"$(PROJECT_DIR)/libAliLiving/IMLCoapBase/IMLCoapBase",
-					"$(PROJECT_DIR)/libAliLiving/IMSAuthentication/IMSAuthentication",
-					"$(PROJECT_DIR)/libAliLiving/IMSLog/IMSLog",
-					"$(PROJECT_DIR)/libAliLiving/AlicloudUTDID/utdid",
-					"$(PROJECT_DIR)/libAliLiving/IMSAccount/IMSAccount",
-					"$(PROJECT_DIR)/libAliLiving/AlicloudPushIoT/push",
-					"$(PROJECT_DIR)/libAliLiving/IMSApiClient/IMSApiClient",
-					"$(PROJECT_DIR)/libAliLiving/AlicloudApiSDK/CloudApiSdk",
-					"$(PROJECT_DIR)/libAliLiving/IMSBonePluginKit/IMSBonePluginKit",
-					"$(PROJECT_DIR)/libAliLiving/IMSDeviceCenter/IMSDeviceCenter",
-					"$(PROJECT_DIR)/libAliLiving/AlicloudALBBOpenAccount/openaccount",
-					"$(PROJECT_DIR)/libAliLiving/AKTBJSONModel/iot-sdk-jsonmodel",
-					"$(PROJECT_DIR)/libAliLiving/AlicloudUtils/utils",
-					"$(PROJECT_DIR)/libAliLiving/LinkNetworkSDK/LinkNetworkSDK",
-					"$(PROJECT_DIR)/libAliLiving/IMSDeviceGateway/IMSDeviceGateway",
-					"$(PROJECT_DIR)/libAliLiving/IMSMobileChannel/IMSMobileChannel",
-					"$(PROJECT_DIR)/libAliLiving/IMSThingCapability/IMSThingCapability",
-					"$(PROJECT_DIR)/libAliLiving/AlicloudSGSecurityBody/SGSecurityBody",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../react-native/React/**";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";

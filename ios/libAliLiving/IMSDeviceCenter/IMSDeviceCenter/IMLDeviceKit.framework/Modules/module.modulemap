@@ -1,6 +1,0 @@
-framework module IMLDeviceKit {
-  umbrella header "IMLDeviceKit.h"
-
-  export *
-  module * { export * }
-}

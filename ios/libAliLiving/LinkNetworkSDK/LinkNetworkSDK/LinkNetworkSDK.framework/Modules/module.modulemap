@@ -1,6 +1,0 @@
-framework module LinkNetworkSDK {
-  umbrella header "LinkNetworkSDK.h"
-
-  export *
-  module * { export * }
-}

@@ -1,6 +1,0 @@
-framework module BoneThingCapability {
-  umbrella header "BoneThingCapability.h"
-
-  export *
-  module * { export * }
-}

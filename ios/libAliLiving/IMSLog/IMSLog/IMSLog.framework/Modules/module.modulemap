@@ -1,6 +1,0 @@
-framework module IMSLog {
-  umbrella header "IMSLog.h"
-
-  export *
-  module * { export * }
-}

@@ -1,6 +1,0 @@
-framework module IMLBoneDeviceCenter {
-  umbrella header "IMLBoneDeviceCenter.h"
-
-  export *
-  module * { export * }
-}
