@@ -13,12 +13,31 @@
 #import "RNSendToJsReact.h"
 #import "WebSocketClient.h"
 #import "IMSNetWorkServer.h"
+#import <React/RCTBridge.h>
+#import <IMSApiClient/IMSConfiguration.h>
+#import <IMSAccount/IMSAccountService.h>
+#import <IMSAuthentication/IMSAuthentication.h>
+//#import <SystemConfiguration/SystemConfiguration.h>
 #define kLoginError @"50001"
 #define JK_IS_STR_NIL(objStr) (![objStr isKindOfClass:[NSString class]] || objStr == nil || [objStr length] <= 0)
 @interface libAliLiving()<RCTBridgeModule>
 @end
 @implementation libAliLiving
 RCT_EXPORT_MODULE(UgenAliLiving);
+//初始化
+RCT_EXPORT_METHOD(instanceSDK){
+    if (![IMSAccountService sharedService].accountProvider) {
+        [IMSConfiguration initWithHost:@"api.link.aliyun.com" serverEnv:IMSServerRelease];
+        
+        IMSOpenAccount *openAccount = [IMSOpenAccount sharedInstance];
+        
+        [IMSAccountService sharedService].accountProvider = openAccount;
+        
+        [IMSAccountService sharedService].sessionProvider = openAccount;
+        
+        [IMSIotAuth auth];
+    }
+}
 //登录
 RCT_REMAP_METHOD(login, resolve:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)rejecter){
     UIViewController *con = (UIViewController *)[[UIApplication sharedApplication] keyWindow].rootViewController;
@@ -29,6 +48,19 @@ RCT_REMAP_METHOD(login, resolve:(RCTPromiseResolveBlock)resolve rejecter:(RCTPro
     } failure:^(NSError *error) {
         rejecter(kLoginError,error.domain,error);
     }];
+}
+//自有登录
+RCT_REMAP_METHOD(ssoLogin,authCode:(NSString *)authCode ssoResolve:(RCTPromiseResolveBlock)resolve ssoRejecter:(RCTPromiseRejectBlock)rejecter){
+    
+    [IMSOpenAccount sharedInstance].thirdLoginResult = ^(NSError *err, NSDictionary *session) {
+        if (err) {
+            rejecter(kLoginError,err.domain,err);
+        }else{
+            resolve(session);
+        }
+    };
+    
+    [[IMSOpenAccount sharedInstance] thirdLoginWithAuthCode:authCode];
 }
 //退出登录
 RCT_EXPORT_METHOD(logout:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)rejecter){
@@ -66,10 +98,8 @@ RCT_EXPORT_METHOD(stopScanLocalDevice){
 RCT_EXPORT_METHOD(startAddDevice:(NSString *)productKey){
     FYSDK *sdk = [FYSDK sharedInstance];
     
-    [sdk startAddDeviceWithProductKey:productKey];
-    
     sdk.provisionStatusBlock = ^(NSDictionary *statusDict) {
-        [RNSendToJsReact emitEventWithName:kOnProvisionStatus andPayload:@{}];
+        [RNSendToJsReact emitEventWithName:kOnProvisionedResult andPayload:@{@"data":@{@"state":kOnProvisionStatus,@"result":@""}}];
     };
     
     sdk.provisionedResultBlock = ^(NSDictionary *result, NSError *err) {
@@ -78,30 +108,33 @@ RCT_EXPORT_METHOD(startAddDevice:(NSString *)productKey){
             NSDictionary *errDict = @{@"data":codeStr};
             [RNSendToJsReact emitEventWithName:kError andPayload:errDict];
         }else{
-            [RNSendToJsReact emitEventWithName:kOnProvisionedResult andPayload:@{@"data":result}];
+            [RNSendToJsReact emitEventWithName:kOnProvisionedResult andPayload:@{@"data":@{@"state":kOnProvisionedResult,@"result":result}}];
         }
     };
     sdk.provisioningBlock = ^{
-        [RNSendToJsReact emitEventWithName:kOnProvisioning andPayload:@{}];
+        [RNSendToJsReact emitEventWithName:kOnProvisionedResult andPayload:@{@"data":@{@"state":kOnProvisioning,@"result":@""}}];
     };
+    
     sdk.provisionPrepareBlock = ^(NSInteger state) {
-        [RNSendToJsReact emitEventWithName:kOnProvisionPrepare andPayload:@{}];
+        [RNSendToJsReact emitEventWithName:kOnProvisionedResult andPayload:@{@"data":@{@"state":kOnProvisionPrepare,@"result":[NSString stringWithFormat:@"%ld",state]}}];
     };
     sdk.preCheckBlock = ^(BOOL success, NSError *err) {
         if (err) {
             [RNSendToJsReact emitEventWithName:kError andPayload:@{}];
         }else{
-            [RNSendToJsReact emitEventWithName:kOnPreCheck andPayload:@{}];
+            [RNSendToJsReact emitEventWithName:kOnProvisionedResult andPayload:@{@"data":@{@"state":kOnPreCheck,@"result":@""}}];
         }
     };
+    
+    [sdk startAddDeviceWithProductKey:productKey];
 }
 //中止添加设备配网流程
 RCT_EXPORT_METHOD(stopAddDevice){
     [[FYSDK sharedInstance] stopAddDevice];
 }
 //添加配网的wifi名和wifi密码
-RCT_REMAP_METHOD(toggleProvision,wifiName:(NSString *)wifiName wifiPassword:(NSString *)wifiPassword timeout:(int)timeout){
-    [[FYSDK sharedInstance] toggleProvisionWithName:wifiName wifiPassword:wifiPassword timeout:timeout];
+RCT_REMAP_METHOD(toggleProvision,wifiName:(NSString *)wifiName wifiPassword:(NSString *)wifiPassword timeout:(NSString *)timeout){
+    [[FYSDK sharedInstance] toggleProvisionWithName:wifiName wifiPassword:wifiPassword timeout:[timeout intValue]];
 }
 //获取设备token
 RCT_REMAP_METHOD(getDeviceToken,pk:(NSString *)pk dn:(NSString *)dn timeout:(NSString *)timeout getTokenResolve:(RCTPromiseResolveBlock)resolve getTokenRejecter:(RCTPromiseRejectBlock)rejecter){
@@ -149,6 +182,18 @@ RCT_REMAP_METHOD(getCurrentAccountMessage,accountResolve:(RCTPromiseResolveBlock
         resolve(@"");
     }
 }
+RCT_REMAP_METHOD(getAccountCredential,getAccountResolve:(RCTPromiseResolveBlock)resolve getAccountRejecter:(RCTPromiseRejectBlock)rejecter){
+    IMSCredential *credential = [IMSCredentialManager sharedManager].credential;
+    
+    NSDictionary *credentialDict = @{
+                                    @"identityId":credential.identityId,
+                                    @"iotToken":credential.iotToken,
+                                    @"iotRefreshToken":credential.iotRefreshToken
+                                    };
+    
+    resolve(credentialDict);
+}
+
 //发送网络请求
 RCT_REMAP_METHOD(send, path:(NSString *)path params:(id)params version:(NSString *)version iotAuth:(BOOL)iotAuth sendResolve:(RCTPromiseResolveBlock)resolve sendRejecter:(RCTPromiseRejectBlock)rejecter){
     
@@ -166,6 +211,10 @@ RCT_REMAP_METHOD(send, path:(NSString *)path params:(id)params version:(NSString
         }
     }];
 }
+//isWifi5G
+RCT_REMAP_METHOD(isWifi5G,isFiveWifiResolve:(RCTPromiseResolveBlock)resolve isFiveWifiRejecter:(RCTPromiseRejectBlock)rejecter){
+    resolve(YES);
+}
 - (NSString *)toJSONStringWithDict:(NSDictionary *)dict {
     NSData *data = [NSJSONSerialization dataWithJSONObject:dict
                                                    options:NSJSONReadingMutableLeaves | NSJSONReadingAllowFragments
@@ -179,6 +228,87 @@ RCT_REMAP_METHOD(send, path:(NSString *)path params:(id)params version:(NSString
                                              encoding:NSUTF8StringEncoding];
     return string;
 }
+//RCT_REMAP_METHOD(getWifiState,wifiResolve:(RCTPromiseResolveBlock)resolve wifiRejecter:(RCTPromiseRejectBlock)rejecter){
+//    resolve([self getSignalStrengthBar]);
+//}
+//- (NSString *)getSignalStrengthBar {
+//    if (![self whetherConnectedNetwork]) return @"";
+//    UIApplication *app = [UIApplication sharedApplication];
+//    NSArray *subviews = [[[app valueForKey:@"statusBar"] valueForKey:@"foregroundView"] subviews];
+//    NSString *dataNetworkItemView = nil;
+//    NSString *signalStrengthBars = @"";
+//    for (id subview in subviews) {
+//        if([subview isKindOfClass:[NSClassFromString(@"UIStatusBarDataNetworkItemView") class]] && [[self getNetworkType] isEqualToString:@"WIFI"] && ![[self getNetworkType] isEqualToString:@"NONE"]) {
+//            dataNetworkItemView = subview;
+//            signalStrengthBars = [NSString stringWithFormat:@"0%@",[dataNetworkItemView valueForKey:@"_wifiStrengthBars"]];
+//            break;
+//        }
+//        if ([subview isKindOfClass:[NSClassFromString(@"UIStatusBarSignalStrengthItemView") class]] && ![[self getNetworkType] isEqualToString:@"WIFI"] && ![[self getNetworkType] isEqualToString:@"NONE"]) {
+//            dataNetworkItemView = subview;
+//            signalStrengthBars = [NSString stringWithFormat:@"1%@",[dataNetworkItemView valueForKey:@"_signalStrengthBars"]];
+//            break;
+//        }
+//    }
+//    return signalStrengthBars;
+//}
+//- (NSString *)getNetworkType {
+//    if (![self whetherConnectedNetwork]) return @"NONE";
+//    UIApplication *app = [UIApplication sharedApplication];
+//    NSArray *subviews = [[[app valueForKeyPath:@"statusBar"] valueForKeyPath:@"foregroundView"] subviews];
+//    NSString *type = @"NONE";
+//    for (id subview in subviews) {
+//        if ([subview isKindOfClass:NSClassFromString(@"UIStatusBarDataNetworkItemView")]) {
+//            int networkType = [[subview valueForKeyPath:@"dataNetworkType"] intValue];
+//            switch (networkType) {
+//                case 0:
+//                    type = @"NONE";
+//                    break;
+//                case 1:
+//                    type = @"2G";
+//                    break;
+//                case 2:
+//                    type = @"3G";
+//                    break;
+//                case 3:
+//                    type = @"4G";
+//                    break;
+//                case 5:
+//                    type = @"WIFI";
+//                    break;
+//            }
+//        }
+//    }
+//    return type;
+//}
+//- (BOOL)whetherConnectedNetwork
+//{
+//    //创建零地址，0.0.0.0的地址表示查询本机的网络连接状态
+//
+//    struct sockaddr_storage zeroAddress;//IP地址
+//
+//    bzero(&zeroAddress, sizeof(zeroAddress));//将地址转换为0.0.0.0
+//    zeroAddress.ss_len = sizeof(zeroAddress);//地址长度
+//    zeroAddress.ss_family = AF_INET;//地址类型为UDP, TCP, etc.
+//
+//    // Recover reachability flags
+//    SCNetworkReachabilityRef defaultRouteReachability = SCNetworkReachabilityCreateWithAddress(NULL, (struct sockaddr *)&zeroAddress);
+//    SCNetworkReachabilityFlags flags;
+//
+//    //获得连接的标志
+//    BOOL didRetrieveFlags = SCNetworkReachabilityGetFlags(defaultRouteReachability, &flags);
+//    CFRelease(defaultRouteReachability);
+//
+//    //如果不能获取连接标志，则不能连接网络，直接返回
+//    if (!didRetrieveFlags)
+//    {
+//        return NO;
+//    }
+//    //根据获得的连接标志进行判断
+//
+//    BOOL isReachable = flags & kSCNetworkFlagsReachable;
+//    BOOL needsConnection = flags & kSCNetworkFlagsConnectionRequired;
+//    return (isReachable&&!needsConnection) ? YES : NO;
+//}
 - (dispatch_queue_t)methodQueue{
     return dispatch_get_main_queue();
 }

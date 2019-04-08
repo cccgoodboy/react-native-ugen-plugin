@@ -2,6 +2,9 @@ package ugen.fy.plugin;
 
 import android.app.Application;
 import android.util.Log;
+import android.net.wifi.ScanResult;
+import android.net.wifi.WifiInfo;
+import android.net.wifi.WifiManager;
 
 import com.aliyun.alink.business.devicecenter.api.discovery.DiscoveryType;
 import com.aliyun.iot.aep.sdk.apiclient.callback.IoTCallback;
@@ -75,11 +78,7 @@ public class AliLiving extends ReactContextBaseJavaModule {
     }
     @ReactMethod
     public void isLogin(Promise promise){
-        if (this.sdk.isLogin()){
-            promise.resolve(this.sdk.isLogin());
-        }else {
-            promise.reject("401","未登录");
-        }
+        promise.resolve(this.sdk.isLogin());
     }
     @ReactMethod
     public void startScanLocalDevice(){
@@ -223,6 +222,32 @@ public class AliLiving extends ReactContextBaseJavaModule {
                 }
             }
         });
+    }
+    @ReactMethod
+    public void isWifi5G(Promise promise){
+        promise.resolve(this.isWifi5G(mContext));
+    }
+    //判断是否是5G
+    public boolean isWifi5G(Context context) {
+        int freq = 0;
+        WifiManager wifiManager = (WifiManager) context.getSystemService(Context.WIFI_SERVICE);
+        WifiInfo wifiInfo = wifiManager.getConnectionInfo();
+        if (android.os.Build.VERSION.SDK_INT > android.os.Build.VERSION_CODES.LOLLIPOP) {
+            freq = wifiInfo.getFrequency();
+        } else {
+            String ssid = wifiInfo.getSSID();
+            if (ssid != null && ssid.length() > 2) {
+                String ssidTemp = ssid.substring(1, ssid.length() - 1);
+                List<ScanResult> scanResults = wifiManager.getScanResults();
+                for (ScanResult scanResult : scanResults) {
+                    if (scanResult.SSID.equals(ssidTemp)) {
+                        freq = scanResult.frequency;
+                        break;
+                    }
+                }
+            }
+        }
+        return freq > 4900 && freq < 5900;
     }
     public static HashMap<String, Object> parseJSONString(String json) {
         JSONObject obj;

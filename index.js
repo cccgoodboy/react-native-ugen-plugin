@@ -64,6 +64,13 @@ class AliLiving{
     }
     //中止配网流程
     static stopAddDevice(){
+        if(Platform.OS === "android"){
+            DeviceEventEmitter.removeAllListeners('onProvisionedResult');
+            DeviceEventEmitter.removeAllListeners('error');
+        }else{
+            listenModule.removeAllListeners('onProvisionedResult');
+            listenModule.removeAllListeners('error');
+        }
         sdk.stopAddDevice();
     }
     //添加配网的wifi和wifi密码
