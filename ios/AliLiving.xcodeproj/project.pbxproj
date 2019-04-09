@@ -331,6 +331,16 @@
 					"\"${PODS_ROOT}/AlicloudSGMain/SGMain\"/**",
 					"\"${PODS_ROOT}/AlicloudSGSecurityBody/SGSecurityBody\"/**",
 					"\"${PODS_ROOT}/AlicloudUTDID/utdid\"/**",
+					"\"${PODS_ROOT}/AlicloudUtils/utils\"/**",
+					"\"${PODS_ROOT}/IMLCoapBase/IMLCoapBase\"/**",
+					"\"${PODS_ROOT}/IMSAuthentication/IMSAuthentication\"/**",
+					"\"${PODS_ROOT}/IMSDeviceCenter/IMSDeviceCenter\"/**",
+					"\"${PODS_ROOT}/IMSThingCapability/IMSThingCapability\"/**",
+					"\"${PODS_ROOT}/LinkNetworkSDK/LinkNetworkSDK\"/**",
+					"\"${PODS_ROOT}/IMSMobileChannel/IMSMobileChannel\"/**",
+					"\"${PODS_ROOT}/IMSLog/IMSLog\"/**",
+					"\"${PODS_ROOT}/IMSDeviceGateway/IMSDeviceGateway\"/**",
+					"\"${PODS_ROOT}/IMSApiClient/IMSApiClient\"/**",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/../../react-native/React/**",
@@ -357,6 +367,16 @@
 					"\"${PODS_ROOT}/AlicloudSGMain/SGMain\"/**",
 					"\"${PODS_ROOT}/AlicloudSGSecurityBody/SGSecurityBody\"/**",
 					"\"${PODS_ROOT}/AlicloudUTDID/utdid\"/**",
+					"\"${PODS_ROOT}/AlicloudUtils/utils\"/**",
+					"\"${PODS_ROOT}/IMLCoapBase/IMLCoapBase\"/**",
+					"\"${PODS_ROOT}/IMSAuthentication/IMSAuthentication\"/**",
+					"\"${PODS_ROOT}/IMSDeviceCenter/IMSDeviceCenter\"/**",
+					"\"${PODS_ROOT}/IMSThingCapability/IMSThingCapability\"/**",
+					"\"${PODS_ROOT}/LinkNetworkSDK/LinkNetworkSDK\"/**",
+					"\"${PODS_ROOT}/IMSMobileChannel/IMSMobileChannel\"/**",
+					"\"${PODS_ROOT}/IMSLog/IMSLog\"/**",
+					"\"${PODS_ROOT}/IMSDeviceGateway/IMSDeviceGateway\"/**",
+					"\"${PODS_ROOT}/IMSApiClient/IMSApiClient\"/**",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/../../react-native/React/**",
