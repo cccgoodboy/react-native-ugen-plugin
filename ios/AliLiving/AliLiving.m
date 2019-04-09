@@ -1,12 +1,12 @@
 //
-//  libAliLiving.m
-//  libAliLiving
+//  AliLiving.m
+//  AliLiving
 //
-//  Created by 初程程 on 2019/4/1.
+//  Created by 初程程 on 2019/4/9.
 //  Copyright © 2019年 初程程. All rights reserved.
 //
 
-#import "libAliLiving.h"
+#import "AliLiving.h"
 #import "IMSIotAuth.h"
 #import "IMSOpenAccount.h"
 #import "FYSDK.h"
@@ -17,12 +17,12 @@
 #import <IMSApiClient/IMSConfiguration.h>
 #import <IMSAccount/IMSAccountService.h>
 #import <IMSAuthentication/IMSAuthentication.h>
-//#import <SystemConfiguration/SystemConfiguration.h>
 #define kLoginError @"50001"
 #define JK_IS_STR_NIL(objStr) (![objStr isKindOfClass:[NSString class]] || objStr == nil || [objStr length] <= 0)
-@interface libAliLiving()<RCTBridgeModule>
+
+@interface AliLiving()<RCTBridgeModule>
 @end
-@implementation libAliLiving
+@implementation AliLiving
 RCT_EXPORT_MODULE(UgenAliLiving);
 //初始化
 RCT_EXPORT_METHOD(instanceSDK){
@@ -186,10 +186,10 @@ RCT_REMAP_METHOD(getAccountCredential,getAccountResolve:(RCTPromiseResolveBlock)
     IMSCredential *credential = [IMSCredentialManager sharedManager].credential;
     
     NSDictionary *credentialDict = @{
-                                    @"identityId":credential.identityId,
-                                    @"iotToken":credential.iotToken,
-                                    @"iotRefreshToken":credential.iotRefreshToken
-                                    };
+                                     @"identityId":credential.identityId,
+                                     @"iotToken":credential.iotToken,
+                                     @"iotRefreshToken":credential.iotRefreshToken
+                                     };
     
     resolve(credentialDict);
 }
@@ -213,7 +213,7 @@ RCT_REMAP_METHOD(send, path:(NSString *)path params:(id)params version:(NSString
 }
 //isWifi5G
 RCT_REMAP_METHOD(isWifi5G,isFiveWifiResolve:(RCTPromiseResolveBlock)resolve isFiveWifiRejecter:(RCTPromiseRejectBlock)rejecter){
-//    resolve(YES);
+    //    resolve(YES);
 }
 - (NSString *)toJSONStringWithDict:(NSDictionary *)dict {
     NSData *data = [NSJSONSerialization dataWithJSONObject:dict

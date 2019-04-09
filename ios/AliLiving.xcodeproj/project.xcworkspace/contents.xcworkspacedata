@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:libAliLiving.xcodeproj">
+      location = "self:AliLiving.xcodeproj">
    </FileRef>
 </Workspace>
