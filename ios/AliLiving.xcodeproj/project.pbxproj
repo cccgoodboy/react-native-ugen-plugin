@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		21406FF1225CA699004FCC9A /* AliLiving.m in Sources */ = {isa = PBXBuildFile; fileRef = 21406FE4225CA699004FCC9A /* AliLiving.m */; };
+		21407045225CAFF9004FCC9A /* FYSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 21407036225CAFF9004FCC9A /* FYSDK.m */; };
+		21407046225CAFF9004FCC9A /* IMSOpenAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 21407039225CAFF9004FCC9A /* IMSOpenAccount.m */; };
+		21407047225CAFF9004FCC9A /* IMSIotAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 2140703A225CAFF9004FCC9A /* IMSIotAuth.m */; };
+		21407048225CAFF9004FCC9A /* RNSendToJsReact.m in Sources */ = {isa = PBXBuildFile; fileRef = 2140703E225CAFF9004FCC9A /* RNSendToJsReact.m */; };
+		21407049225CAFF9004FCC9A /* IMSNetWorkServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 21407041225CAFF9004FCC9A /* IMSNetWorkServer.m */; };
+		2140704A225CAFF9004FCC9A /* WebSocketClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 21407043225CAFF9004FCC9A /* WebSocketClient.m */; };
 		488FE2A2200BCED100E05AB0 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 488FE2A1200BCEC900E05AB0 /* MediaPlayer.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +32,18 @@
 /* Begin PBXFileReference section */
 		21406FDE225CA699004FCC9A /* AliLiving.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliLiving.h; sourceTree = "<group>"; };
 		21406FE4225CA699004FCC9A /* AliLiving.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliLiving.m; sourceTree = "<group>"; };
+		21407036225CAFF9004FCC9A /* FYSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYSDK.m; sourceTree = "<group>"; };
+		21407037225CAFF9004FCC9A /* FYSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYSDK.h; sourceTree = "<group>"; };
+		21407039225CAFF9004FCC9A /* IMSOpenAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMSOpenAccount.m; sourceTree = "<group>"; };
+		2140703A225CAFF9004FCC9A /* IMSIotAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMSIotAuth.m; sourceTree = "<group>"; };
+		2140703B225CAFF9004FCC9A /* IMSOpenAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMSOpenAccount.h; sourceTree = "<group>"; };
+		2140703C225CAFF9004FCC9A /* IMSIotAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMSIotAuth.h; sourceTree = "<group>"; };
+		2140703E225CAFF9004FCC9A /* RNSendToJsReact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNSendToJsReact.m; sourceTree = "<group>"; };
+		2140703F225CAFF9004FCC9A /* IMSNetWorkServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMSNetWorkServer.h; sourceTree = "<group>"; };
+		21407040225CAFF9004FCC9A /* RNSendToJsReact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNSendToJsReact.h; sourceTree = "<group>"; };
+		21407041225CAFF9004FCC9A /* IMSNetWorkServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMSNetWorkServer.m; sourceTree = "<group>"; };
+		21407043225CAFF9004FCC9A /* WebSocketClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebSocketClient.m; sourceTree = "<group>"; };
+		21407044225CAFF9004FCC9A /* WebSocketClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebSocketClient.h; sourceTree = "<group>"; };
 		488FE2A1200BCEC900E05AB0 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		9D23B34F1C767B80008B4819 /* libAliLiving.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAliLiving.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -45,10 +63,62 @@
 		21406FDA225CA699004FCC9A /* AliLiving */ = {
 			isa = PBXGroup;
 			children = (
+				21407034225CAFF9004FCC9A /* Ali */,
+				2140703D225CAFF9004FCC9A /* Network */,
+				21407042225CAFF9004FCC9A /* WebSocket */,
 				21406FDE225CA699004FCC9A /* AliLiving.h */,
 				21406FE4225CA699004FCC9A /* AliLiving.m */,
 			);
 			path = AliLiving;
+			sourceTree = "<group>";
+		};
+		21407034225CAFF9004FCC9A /* Ali */ = {
+			isa = PBXGroup;
+			children = (
+				21407035225CAFF9004FCC9A /* FYSDK */,
+				21407038225CAFF9004FCC9A /* Account */,
+			);
+			path = Ali;
+			sourceTree = "<group>";
+		};
+		21407035225CAFF9004FCC9A /* FYSDK */ = {
+			isa = PBXGroup;
+			children = (
+				21407036225CAFF9004FCC9A /* FYSDK.m */,
+				21407037225CAFF9004FCC9A /* FYSDK.h */,
+			);
+			path = FYSDK;
+			sourceTree = "<group>";
+		};
+		21407038225CAFF9004FCC9A /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				21407039225CAFF9004FCC9A /* IMSOpenAccount.m */,
+				2140703A225CAFF9004FCC9A /* IMSIotAuth.m */,
+				2140703B225CAFF9004FCC9A /* IMSOpenAccount.h */,
+				2140703C225CAFF9004FCC9A /* IMSIotAuth.h */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		2140703D225CAFF9004FCC9A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2140703E225CAFF9004FCC9A /* RNSendToJsReact.m */,
+				2140703F225CAFF9004FCC9A /* IMSNetWorkServer.h */,
+				21407040225CAFF9004FCC9A /* RNSendToJsReact.h */,
+				21407041225CAFF9004FCC9A /* IMSNetWorkServer.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		21407042225CAFF9004FCC9A /* WebSocket */ = {
+			isa = PBXGroup;
+			children = (
+				21407043225CAFF9004FCC9A /* WebSocketClient.m */,
+				21407044225CAFF9004FCC9A /* WebSocketClient.h */,
+			);
+			path = WebSocket;
 			sourceTree = "<group>";
 		};
 		488FE2A0200BCEC900E05AB0 /* Frameworks */ = {
@@ -132,7 +202,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2140704A225CAFF9004FCC9A /* WebSocketClient.m in Sources */,
 				21406FF1225CA699004FCC9A /* AliLiving.m in Sources */,
+				21407046225CAFF9004FCC9A /* IMSOpenAccount.m in Sources */,
+				21407047225CAFF9004FCC9A /* IMSIotAuth.m in Sources */,
+				21407049225CAFF9004FCC9A /* IMSNetWorkServer.m in Sources */,
+				21407048225CAFF9004FCC9A /* RNSendToJsReact.m in Sources */,
+				21407045225CAFF9004FCC9A /* FYSDK.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,11 +298,32 @@
 		9D23B3591C767B80008B4819 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/AlicloudALBBOpenAccount/openaccount\"/**",
+					"\"${PODS_ROOT}/AKTBJSONModel/iot-sdk-jsonmodel\"/**",
+					"\"${PODS_ROOT}/IMSAccount/IMSAccount\"/**",
+					"\"${PODS_ROOT}/AlicloudApiSDK/CloudApiSdk\"/**",
+					"\"${PODS_ROOT}/AlicloudSGMain/SGMain\"/**",
+					"\"${PODS_ROOT}/AlicloudSGSecurityBody/SGSecurityBody\"/**",
+					"\"${PODS_ROOT}/AlicloudUTDID/utdid\"/**",
+					"\"${PODS_ROOT}/IMSApiClient/IMSApiClient\"/**",
+					"\"${PODS_ROOT}/AlicloudUtils/utils\"/**",
+					"\"${PODS_ROOT}/IMLCoapBase/IMLCoapBase\"/**",
+					"\"${PODS_ROOT}/IMSAuthentication/IMSAuthentication\"/**",
+					"\"${PODS_ROOT}/IMSDeviceGateway/IMSDeviceGateway\"/**",
+					"\"${PODS_ROOT}/IMSDeviceCenter/IMSDeviceCenter\"/**",
+					"\"${PODS_ROOT}/IMSThingCapability/IMSThingCapability\"/**",
+					"\"${PODS_ROOT}/LinkNetworkSDK/LinkNetworkSDK\"/**",
+					"\"${PODS_ROOT}/IMSLog/IMSLog\"/**",
+					"\"${PODS_ROOT}/IMSMobileChannel/IMSMobileChannel\"/**",
+				);
 				HEADER_SEARCH_PATHS = (
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../../React/**",
 					"$(SRCROOT)/node_modules/react-native/React/**",
 					"$(SRCROOT)/../react-native/React/**",
+					"$(SRCROOT)/../../../ios/Pods/**",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -237,11 +334,32 @@
 		9D23B35A1C767B80008B4819 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/AlicloudALBBOpenAccount/openaccount\"/**",
+					"\"${PODS_ROOT}/AKTBJSONModel/iot-sdk-jsonmodel\"/**",
+					"\"${PODS_ROOT}/IMSAccount/IMSAccount\"/**",
+					"\"${PODS_ROOT}/AlicloudApiSDK/CloudApiSdk\"/**",
+					"\"${PODS_ROOT}/AlicloudSGMain/SGMain\"/**",
+					"\"${PODS_ROOT}/AlicloudSGSecurityBody/SGSecurityBody\"/**",
+					"\"${PODS_ROOT}/AlicloudUTDID/utdid\"/**",
+					"\"${PODS_ROOT}/IMSApiClient/IMSApiClient\"/**",
+					"\"${PODS_ROOT}/AlicloudUtils/utils\"/**",
+					"\"${PODS_ROOT}/IMLCoapBase/IMLCoapBase\"/**",
+					"\"${PODS_ROOT}/IMSAuthentication/IMSAuthentication\"/**",
+					"\"${PODS_ROOT}/IMSDeviceGateway/IMSDeviceGateway\"/**",
+					"\"${PODS_ROOT}/IMSDeviceCenter/IMSDeviceCenter\"/**",
+					"\"${PODS_ROOT}/IMSThingCapability/IMSThingCapability\"/**",
+					"\"${PODS_ROOT}/LinkNetworkSDK/LinkNetworkSDK\"/**",
+					"\"${PODS_ROOT}/IMSLog/IMSLog\"/**",
+					"\"${PODS_ROOT}/IMSMobileChannel/IMSMobileChannel\"/**",
+				);
 				HEADER_SEARCH_PATHS = (
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../../React/**",
 					"$(SRCROOT)/node_modules/react-native/React/**",
 					"$(SRCROOT)/../react-native/React/**",
+					"$(SRCROOT)/../../../ios/Pods/**",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
