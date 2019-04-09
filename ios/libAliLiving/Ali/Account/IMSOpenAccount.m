@@ -171,7 +171,6 @@ NSString * _Nonnull const IMSNotificationAccountLogout = @"IMSNotificationAccoun
     [ssoService oauthWithThirdParty:code delegate:self];
 }
 - (void)openAccountOAuthError:(NSError *)error Session:(ALBBOpenAccountSession *)session{
-  NSLog(@"%@",session);
-  NSLog(@"%@",error);
+  self.thirdLoginResult(error, [self currentSession]);
 }
 @end

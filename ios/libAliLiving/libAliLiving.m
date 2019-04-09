@@ -213,7 +213,7 @@ RCT_REMAP_METHOD(send, path:(NSString *)path params:(id)params version:(NSString
 }
 //isWifi5G
 RCT_REMAP_METHOD(isWifi5G,isFiveWifiResolve:(RCTPromiseResolveBlock)resolve isFiveWifiRejecter:(RCTPromiseRejectBlock)rejecter){
-    resolve(YES);
+//    resolve(YES);
 }
 - (NSString *)toJSONStringWithDict:(NSDictionary *)dict {
     NSData *data = [NSJSONSerialization dataWithJSONObject:dict

@@ -11,7 +11,7 @@
 #import <IMSAccount/IMSAccountProtocol.h>
 
 @interface IMSOpenAccount : NSObject <IMSAccountProtocol, IMSAccountUIProtocol>
-
+@property (nonatomic ,copy)void(^thirdLoginResult)(NSError *err,NSDictionary *session);
 + (instancetype)sharedInstance;
 - (void)logout;
 - (BOOL)isLogin;
